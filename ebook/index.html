@@ -41,9 +41,14 @@ and open the template in the editor.
                 height: 30px; 
                 width: 210px;
                 background-size: 103% 113%;
-                border-radius: 5px;
+                border-radius: 4px;
                 box-shadow:2px 2px grey;  
                 margin-top: 1px;
+                font-family: Nirmala UI;
+                color: #5B5B5B;
+                text-align: left;
+                padding-left: 50px;
+                font-weight: bold;
             }
             .ch:hover, .active{
                 background-image: url("Button_Hover.png");
@@ -51,9 +56,14 @@ and open the template in the editor.
                 height: 30px; 
                 width: 210px;
                 background-size: 102% 103%;
-                border-radius: 5px;
+                border-radius: 4px;
                 box-shadow:2px 2px grey; 
                 margin-top: 1px;
+                color: white;
+                font-family: Nirmala UI;
+                font-weight: bold;
+                text-align: left;
+                padding-left: 50px;
             }
             .on-scrollbar {
                height: 69vh;
@@ -85,12 +95,13 @@ and open the template in the editor.
             background-color: transparent;
         }
         #anima{
+                display: none;
                 position: fixed;
                 bottom: 0;
                 margin-bottom:28px;
                 margin-left:188px;
             }
-            #p{
+            .p{
                 background-image: url("Animation_Button.png");
                 border: none;
                 background-size: 100% 100%;
@@ -103,8 +114,8 @@ and open the template in the editor.
                 font-family: Bahnschrift Condensed;
                 font-weight: bolder;
             }
-            #p:hover{
-                background-image: url("Animation_Button_Hover.png");
+            .p:hover{
+               background-image: url("Animation_Button_Hover.png");
                 border: none;
                 background-size: 100% 100%;
                 border-radius: 5px;
@@ -158,16 +169,51 @@ and open the template in the editor.
                  visibility: visible;
           }
             
-          #myDIV{
-              display: none;
-              background-color: green;
-              min-height: 87vh;
+            #myDIV{
+                display: none;
+                background-color: #00522D;
+                min-height: 87vh;
                 width: 153vh;
                 float: left;
                 position: fixed;
                 top: 0;
                
-          }
+            }
+            #player{
+                height: 91%; 
+                width: 99%;
+                padding-left: 10px;
+                padding-top: 10px;
+            }
+            #quiz{
+                background-image: url("background.jpeg");
+                background-size: 100% 100%;
+                 height: 85vh; 
+                width: 98%;
+                margin-left: 10px;
+                margin-top: 3px;
+            }
+            h2{
+                font-weight: bold;
+            }
+            #option{
+                background-color: #F5F8E5; 
+                height: 9vh;
+                width: 85%;
+                border: 2px solid #494F8E;
+                border-radius: 9px;
+                margin-left: 15px;
+            }
+            input[type=text]{
+                border: none;
+                border-bottom: 2px solid black;
+                width: 150px;
+                background-color: #F0F4D3;
+            }
+            label{
+                margin-left: 15px;
+                font-size: 20px;
+            }
           ul li{
                 list-style: none;
                 float: left;
@@ -188,6 +234,7 @@ and open the template in the editor.
               text-shadow: 1px 1px grey;
               text-align: left;
               border-radius: 0px 4px 4px 0px;
+              display: none;
           }
           .side:hover{
               font-family: Nirmala UI;
@@ -204,7 +251,7 @@ and open the template in the editor.
               text-shadow: 1px 1px grey;
               text-align: left;
               border-radius: 0px 4px 4px 0px;
-              opacity: 0.8;
+              opacity: 0.8;   
           }
           .ak:hover{
               filter: brightness(80%);
@@ -224,53 +271,7 @@ and open the template in the editor.
   var elmnt = document.getElementById("scroll");
   var y = elmnt.scrollTop;
   
-}/*
-var flag=0;
-function h(){
-             flag=1;
-            if(flag==1)
-            {
-            document.getElementById("1").style.visibility="hidden";
-            document.getElementById("2").style.visibility="visible";
-            flag=0;
-    }
-    
 }
-function o(){
-     if(flag==0){
-        
-        document.getElementById("1").style.visibility="visible";
-            document.getElementById("2").style.visibility="hidden";
-    }
-}*/
-        function Animation(){
-            video.setAttribute('src','Birbal ki soojh boojh.mp4');
-            video.play();
-        }
-        function Slide(){
-            video.setAttribute('src','Slide show.mp4');
-            video.play();
-        }
-         function Quiz(){
-            video.setAttribute('src','Quiz Contest.mp4');
-            video.play();
-        }
-        function Yogyeta(){
-            video.setAttribute('src','Yogyta Vistar.mp4');
-            video.play();
-        }
-         function Concept(){
-            video.setAttribute('src','Concept Map.mp4');
-            video.play();
-        }
-         function Rachna(){
-            video.setAttribute('src','Rachnaa kaar.mp4');
-            video.play();
-        }
-        function Life(){
-            video.setAttribute('src','Lifeskill and Values.mp4');
-            video.play();
-        }
         </script>
     </head>
     
@@ -278,23 +279,23 @@ function o(){
     
             <div class="w3-container">
               <div id="main" class="w3-row">
-                <div class="w3-col s2" style="float: left;position: fixed;top: 0;line-height: 1.7;">
+                <div class="w3-col s2" style="float: left;position: fixed;top: 0;line-height: 2.2;">
                     <a href="index.html"><img src="Title.png" style="width:208px; margin-top: 3px; height: 150px;"></a>
                       <div class="on-scrollbar" onscroll="myFunction()" >
                           <div id="btn">
-                        <button class="ch"></button><br>
-                        <button class="ch" onclick="Birbal();"></button><br>
-                        <button class="ch"></button><br>
-                        <button class="ch"></button><br>
-                        <button class="ch"></button><br>
-                        <button class="ch"></button><br>
-                        <button class="ch"></button><br>
-                        <button class="ch"></button><br>
-                        <button class="ch"></button><br>
-                        <button class="ch"></button><br>
-                        <button class="ch"></button><br>
-                        <button class="ch"></button><br>
-                        <button class="ch"></button><br>
+                              <button class="ch">सीखो</button><br>
+                        <button class="ch" onclick="Birbal();">बीरबल की चतुराई</button><br>
+                        <button class="ch">सुंदर कौन</button><br>
+                        <button class="ch">जागो प्यारे</button><br>
+                        <button class="ch">चंदामामा</button><br>
+                        <button class="ch">स्वछता</button><br>
+                        <button class="ch">घमंडी का सिर नीचा</button><br>
+                        <button class="ch">पौधे की आत्मकथा</button><br>
+                        <button class="ch">तितली</button><br>
+                        <button class="ch">हमरा राष्ट्रीय पशू 'बाघ'</button><br>
+                        <button class="ch">सीखो</button><br>
+                        <button class="ch">सीखो</button><br>
+                        <button class="ch">सीखो</button><br>
                           </div>
                       </div >
                       </div>
@@ -309,22 +310,37 @@ function o(){
                              <img src="Frontcover.jpg" style="height: 554px; width:490px;" id="im2">
                          </div>
                          <div class="w3-col s10" id="myDIV">
-                             <video id="video" style="height: 91%; width: 99%;padding-left: 10px;padding-top: 10px;">
-                                 <source  src=" " type="video/mp4">
-                             </video></div> 
+                            <video id="player" controls></video> 
+                            <div id='quiz'>
+                              <div style="padding: 60px;padding-left: 180px;"><h2>दिए गए शब्दों की सहायता से खाली स्थान भरो-</h2>
+                                <div id='option'></div><br>
+                                <label>(क)</label><label> बीरबल <input type="text"> के वजीर थे l</label><br><br>
+                                <label>(ख)</label><label> बीरबल <input type="text"> के लिए पूरे राज्य में प्रसिद्ध थे l</label><br><br>
+                                <label>(ग)</label><label> तानसेन बहुत बडे <input type="text"> थे l</label><br><br>
+                                <label>(घ)</label><label> पत्र में दोनों को <input type="text"> पर चढ़ाने की सजा लिखी थी l</label><br><br>
+                                <label>(ड)</label><label> दोनों में फ़ासी पर चढ़ाने की <input type="text"> लग गई l</label><br><br>
+                                <span style="margin-left: 250px;"> 
+                                    <img src="QBACK.png" style="height: 25px;width: 25px;">&nbsp;
+                                    <img src="RESET.png" style="height: 35px;width: 75px;">&nbsp;
+                                    <img src="QNEXT.png" style="height: 25px;width: 25px;">
+                                </span>
+                                </div>
+                                 
+                            </div>
+                         </div> 
                     </div>  
                  </div>
                   <div id="anima">
                     <ul>
-                      <li><button id="p" onclick="Animation()">ANIMATION</button></li>
-                      <li><button id="p"  style="font-family: Nirmala UI;font-size: 15px;width: 70px;font-weight: bolder;">अभ्यास</button></li>
-                      <li><button id="p" onclick="Slide()">SLIDE SHOW</button></li>
-                      <li><button id="p" onclick="Quiz()">QUIZ CONTEST</button></li>
-                      <li><button id="p" onclick="Yogyeta()" style="font-size: 13px; font-family: Nirmala UI;font-weight: bolder;">योग्यता विस्तार</button></li>
-                      <li><button id="p" onclick="Concept()" style="width: 115px;">CONCEPT MAP</button></li>
-                      <li><button id="p" onclick="Rachna()" style="font-size: 13px;font-family: Nirmala UI;font-weight: bolder;">रचना का संसार</button></li>
-                      <li><button id="p" onclick="Life()" style="font-size: 12px;width: 135px;">LIFE SKILL AND VALUES</button></li>
-                      <li><button id="p" style="font-size: 13px;font-family: Nirmala UI;font-weight: bolder;">वर्तनी ज्ञान</button></li>
+                      <li><button class="p" data-video-url='Birbal ki soojh boojh.mp4'>ANIMATION</button></li>
+                      <li><button class="p" style="font-family: Nirmala UI;font-size: 15px;width: 70px;font-weight: bold;">अभ्यास</button></li>
+                      <li><button class="p" data-video-url='Slide show.mp4'>SLIDE SHOW</button></li>
+                      <li><button class="p" name="quiz">QUIZ CONTEST</button></li>
+                      <li><button class="p" data-video-url='Yogyta Vistar.mp4' style="font-size: 13px; font-family: Nirmala UI;font-weight: bold;">योग्यता विस्तार</button></li>
+                      <li><button class="p" data-video-url='Concept Map.mp4' style="width: 115px;">CONCEPT MAP</button></li>
+                      <li><button class="p" data-video-url='Rachnaa kaar.mp4' style="font-size: 13px;font-family: Nirmala UI;font-weight: bold;">रचना का संसार</button></li>
+                      <li><button class="p" data-video-url='Lifeskill and Values.mp4' style="font-size: 12px;width: 135px;">LIFE SKILL AND VALUES</button></li>
+                      <li><button class="p" style="font-size: 13px;font-family: Nirmala UI;font-weight: bold;">वर्तनी ज्ञान</button></li>
                     </ul>
                     </div>
            <br><br>
@@ -337,7 +353,7 @@ function o(){
             <button class="side" style="background-color: #00A0E3">रचनाकार</button><br>
             <button class="side" style="background-color: #EA5E20">अध्यापन संकेत</button><br><br>
             <img src="QG_Button.png" style="height: 175px;margin-left: 40px;"><br><br>
-           <img src="Asset 17.png" style="margin-top: 12px;" class="ak"><br>
+           <img src="Asset 17.png" style="margin-top: 12px;display: none;" class="ak"><br>
            <img src="Asset 21.png" class="ak"><br>
            <img src="Asset 20.png" class="ak">
         </div>
@@ -361,9 +377,9 @@ function o(){
         !>
     <script>
         // play video in parfticular div
-         var video=document.getElementById("video");
+         var video=document.getElementById("player");
          $(document).ready(function(){
-                 $("#p").click(function(){
+                 $(".p").click(function(){
                  $("#myDIV").show();
                  $("#page").hide();
                  $("#page1").hide();
@@ -372,7 +388,16 @@ function o(){
                  $("#myDIV").hide();
                  $("#page").show();
                  $("#page1").show();
+                 $("#anima").show();
+                 $(".side").show();
+                 $(".ak").show();
             });
+                $('[name="quiz"]').click(function(){
+                 $("#myDIV").show();
+                 $("#page").hide();
+                 $("#page1").hide();  
+                 $("#player").hide();
+                });
         });
         
         //next and prev function
@@ -394,6 +419,9 @@ function o(){
             else if(count==2){
                 im1.setAttribute('src','Pg-18.jpg');
                 im2.setAttribute('src','Pg-19.jpg');
+            }
+            else if(count>2){
+                $("#next").prop('disabled',true);
             }
             }
             prev.onclick=function(){
@@ -421,7 +449,19 @@ function o(){
                  this.className += " active";
              });
             }
-            
+    function swapVideo() {
+    player.src = this.getAttribute("data-video-url");
+    player.load();
+    player.play();
+    }
+
+    var videoPlayButtons = document.querySelectorAll("button"),
+        player = document.getElementById("player");
+
+    for (var i=0; i<videoPlayButtons.length; i++){
+        videoPlayButtons[i].addEventListener('click', swapVideo);
+    }
+ 
         
 
 
