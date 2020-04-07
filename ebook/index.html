@@ -9,278 +9,35 @@ and open the template in the editor.
         <title>Ebook</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="w3.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/w3.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <style>
-            body{
-             background-image:url("Interface-Final.png");
-             background-repeat: no-repeat;
-             background-size: 100% 110%;
-            
-            }
-            #main{
-                min-height: 95.6vh;
-                width: 1230px;
-                padding: 0px;
-                float: left;
-            }
-            #z{
-                background-image:url("Pages_Base.png");
-                 background-repeat: no-repeat;
-                 background-size: 100% 100%;
-                min-height: 87vh;
-                width: 153vh;
-                float: left;
-                position: fixed;
-                top: 0;
-                margin-left: 225px;
-            }
-            .ch{
-                background-image: url("Ch_Button.png");
-                border: none;
-                height: 30px; 
-                width: 210px;
-                background-size: 103% 113%;
-                border-radius: 4px;
-                box-shadow:2px 2px grey;  
-                margin-top: 1px;
-                font-family: Nirmala UI;
-                color: #5B5B5B;
-                text-align: left;
-                padding-left: 50px;
-                font-weight: bold;
-            }
-            .ch:hover, .active{
-                background-image: url("Button_Hover.png");
-                border: none;
-                height: 30px; 
-                width: 210px;
-                background-size: 102% 103%;
-                border-radius: 4px;
-                box-shadow:2px 2px grey; 
-                margin-top: 1px;
-                color: white;
-                font-family: Nirmala UI;
-                font-weight: bold;
-                text-align: left;
-                padding-left: 50px;
-            }
-            .on-scrollbar {
-               height: 69vh;
-                width: 223px;
-                overflow: auto;
-            }
-        /*hide scrollbar on hover*/    
-        /*    .on-scrollbar {
-            height: 70vh;
-            width: 205px;
-            overflow: hidden;
-        }
-
-        .on-scrollbar:hover {
-            overflow: auto;
-        }*/
-
-        .on-scrollbar::-webkit-scrollbar {
-            width: 11px;
-        }
-
-        .on-scrollbar::-webkit-scrollbar-thumb {
-            background-color: #babebf;
-            background-clip: padding-box;
-            border-radius: 6px;
-        }
-
-        .on-scrollbar::-webkit-scrollbar-track {
-            background-color: transparent;
-        }
-        #anima{
-                display: none;
-                position: fixed;
-                bottom: 0;
-                margin-bottom:28px;
-                margin-left:188px;
-            }
-            .p{
-                background-image: url("Animation_Button.png");
-                border: none;
-                background-size: 100% 100%;
-                border-radius: 5px;
-                height: 33px;
-                width: 102px;
-                margin-left: 8px;
-                color: #5F3C6E;
-                font-size: 16px;
-                font-family: Bahnschrift Condensed;
-                font-weight: bolder;
-            }
-            .p:hover{
-               background-image: url("Animation_Button_Hover.png");
-                border: none;
-                background-size: 100% 100%;
-                border-radius: 5px;
-                height: 33px;
-                width: 102px;
-                margin-left: 8px;
-                color: white;
-                font-size: 16px;
-                font-family: Bahnschrift Condensed;
-                font-weight: bolder;
-            }
-            
-            .tooltip {
-               position: relative;
-               display: inline-block;
-               
-         }
-            .tooltip .tooltipleft {
-                visibility: hidden;
-                width: 90px;
-                background-color: black;
-                color: #fff;
-                text-align: center;
-                border-radius: 6px;
-               
-  
-           /* Position the tooltip */
-                position: absolute;
-                z-index: 1;
-                top: 12px;
-                right: 105%;
-                 
-         }
-         .tooltip .tooltipright {
-                visibility: hidden;
-                width: 70px;
-                background-color: black;
-                color: #fff;
-                text-align: center;
-                border-radius: 6px;
-              
-  
-            /* Position the tooltip */
-                position: absolute;
-                z-index: 1;
-                top: 1px;
-                left: 105%;
-            }
-
-            .tooltip:hover .tooltipright,.tooltip:hover .tooltipleft  {
-                 visibility: visible;
-          }
-            
-            #myDIV{
-                display: none;
-                background-color: #00522D;
-                min-height: 87vh;
-                width: 153vh;
-                float: left;
-                position: fixed;
-                top: 0;
-               
-            }
-            #player{
-                height: 91%; 
-                width: 99%;
-                padding-left: 10px;
-                padding-top: 10px;
-            }
-            #quiz{
-                background-image: url("background.jpeg");
-                background-size: 100% 100%;
-                 height: 85vh; 
-                width: 98%;
-                margin-left: 10px;
-                margin-top: 3px;
-            }
-            h2{
-                font-weight: bold;
-            }
-            #option{
-                background-color: #F5F8E5; 
-                height: 9vh;
-                width: 85%;
-                border: 2px solid #494F8E;
-                border-radius: 9px;
-                margin-left: 15px;
-            }
-            input[type=text]{
-                border: none;
-                border-bottom: 2px solid black;
-                width: 150px;
-                background-color: #F0F4D3;
-            }
-            label{
-                margin-left: 15px;
-                font-size: 20px;
-            }
-          ul li{
-                list-style: none;
-                float: left;
-                padding-bottom: 20px;
-            }
-          .side{
-              font-family: Nirmala UI;
-              height: 25px;
-              width: 100px;
-              border: none;
-              margin-left: 20px;
-              margin-top: 6px;
-              padding-left: 8px;
-              color: white;
-              font-weight: bolder;
-              font-size: 13px;
-              box-shadow:0px 1.3px black;
-              text-shadow: 1px 1px grey;
-              text-align: left;
-              border-radius: 0px 4px 4px 0px;
-              display: none;
-          }
-          .side:hover{
-              font-family: Nirmala UI;
-              height: 25px;
-              width: 100px;
-              border: none;
-              margin-left: 20px;
-              margin-top: 6px;
-              padding-left: 8px;
-              color: black;
-              font-weight: bolder;
-              font-size: 13px;
-              box-shadow:0px 1.3px black;
-              text-shadow: 1px 1px grey;
-              text-align: left;
-              border-radius: 0px 4px 4px 0px;
-              opacity: 0.8;   
-          }
-          .ak:hover{
-              filter: brightness(80%);
-          }
-           .footer {
-                background-image: url("Seekbar.png");
-                 position: fixed;
-                 left: 0;
-                 bottom: 0;
-                 width: 100%;   
-                 height: 6.5%;
-            }
-            
-        </style>
+        
         <script>
-            function myFunction() {
-  var elmnt = document.getElementById("scroll");
-  var y = elmnt.scrollTop;
-  
-}
+    function myFunction() {
+        var elmnt = document.getElementById("scroll");
+        var y = elmnt.scrollTop;
+    }
+    function allowDrop(ev) {
+        ev.preventDefault();
+    }
+
+    function drag(ev) {
+        ev.dataTransfer.setData("text", ev.target.id);
+    }
+
+    function drop(ev) {
+        ev.preventDefault();
+        var data = ev.dataTransfer.getData("text");
+        ev.target.appendChild(document.getElementById(data));
+    } 
         </script>
     </head>
-    
     <body>
-    
             <div class="w3-container">
               <div id="main" class="w3-row">
                 <div class="w3-col s2" style="float: left;position: fixed;top: 0;line-height: 2.2;">
-                    <a href="index.html"><img src="Title.png" style="width:208px; margin-top: 3px; height: 150px;"></a>
+                    <a href="index.html"><img src="image\Title.png" style="width:208px; margin-top: 3px; height: 150px;"></a>
                       <div class="on-scrollbar" onscroll="myFunction()" >
                           <div id="btn">
                               <button class="ch">सीखो</button><br>
@@ -298,47 +55,124 @@ and open the template in the editor.
                         <button class="ch">सीखो</button><br>
                           </div>
                       </div >
-                      </div>
-                  
-                  
+                      </div> 
                  <div id="z" class="w3-col s10">
                      <div class="w3-row">
                          <div class="w3-col-s6" style="float: left;margin-left: 9px;margin-top: 9px;" id="page">
-                             <img src="page.png" style="height: 554px; width: 491px;" id="im1">
+                             <img src="image\page.png" style="height: 554px; width: 491px;" id="im1">
                          </div>
                          <div class="w3-col-s6" id="page1" style="margin-top: 9px;float: right;margin-right: 12px;">
-                             <img src="Frontcover.jpg" style="height: 554px; width:490px;" id="im2">
+                             <img src="image\Frontcover.jpg" style="height: 554px; width:490px;" id="im2">
                          </div>
                          <div class="w3-col s10" id="myDIV">
                             <video id="player" controls></video> 
                             <div id='quiz'>
-                              <div style="padding: 60px;padding-left: 180px;"><h2>दिए गए शब्दों की सहायता से खाली स्थान भरो-</h2>
-                                <div id='option'></div><br>
-                                <label>(क)</label><label> बीरबल <input type="text"> के वजीर थे l</label><br><br>
-                                <label>(ख)</label><label> बीरबल <input type="text"> के लिए पूरे राज्य में प्रसिद्ध थे l</label><br><br>
-                                <label>(ग)</label><label> तानसेन बहुत बडे <input type="text"> थे l</label><br><br>
-                                <label>(घ)</label><label> पत्र में दोनों को <input type="text"> पर चढ़ाने की सजा लिखी थी l</label><br><br>
-                                <label>(ड)</label><label> दोनों में फ़ासी पर चढ़ाने की <input type="text"> लग गई l</label><br><br>
-                                <span style="margin-left: 250px;"> 
-                                    <img src="QBACK.png" style="height: 25px;width: 25px;">&nbsp;
-                                    <img src="RESET.png" style="height: 35px;width: 75px;">&nbsp;
-                                    <img src="QNEXT.png" style="height: 25px;width: 25px;">
-                                </span>
+                              <div id='fill'>
+                                  <h2>दिए गए शब्दों की सहायता से खाली स्थान भरो-</h2>
+                                  <div id='option' ondragover="allowDrop(event)">
+                                      <img src="image\T1.png" class="op" draggable="true" ondragstart="drag(event)" id="drag9">
+                                      <img src="image\T2.png" class="op" draggable="true" ondragstart="drag(event)" id="drag10">
+                                      <img src="image\T3.png" class="op" draggable="true" ondragstart="drag(event)" id="drag11">
+                                      <img src="image\T4.png" class="op" draggable="true" ondragstart="drag(event)" id="drag12">
+                                      <img src="image\T5.png" class="op" draggable="true" ondragstart="drag(event)" id="drag13">
+                                  </div><br>
+                                  <label>(क)</label><label> बीरबल <span ondrop="drop(event)" ondragover="allowDrop(event)" class="du1" id="dis"></span> के वजीर थे l</label>
+                                  <span style="visibility: hidden;">&nbsp;<img src="" style="height: 20px;width: 25px;"></span><br><br>
+                               
+                                  <label>(ख)</label><label> बीरबल <span ondrop="drop(event)" ondragover="allowDrop(event)" class="du1"></span> के लिए पूरे राज्य में प्रसिद्ध थे l</label><br><br>
+                                
+                                  <label>(ग)</label><label> तानसेन बहुत बडे <span ondrop="drop(event)" ondragover="allowDrop(event)" class="du1"></span> थे l</label><br><br>
+                                
+                                  <label>(घ)</label><label> पत्र में दोनों को <span ondrop="drop(event)" ondragover="allowDrop(event)" class="du1"></span> पर चढ़ाने की सजा लिखी थी l</label><br><br>
+                                
+                                  <label>(ड)</label><label> दोनों में फ़ासी पर चढ़ाने की <span ondrop="drop(event)" ondragover="allowDrop(event)" class="du1"></span> लग गई l</label>
                                 </div>
-                                 
+                                <div id='plural' style="display: none;">
+                                  <h2>दिए गए शब्दों को बहुवचन में बदलो-</h2>
+                                  <div id='option2' ondragover="allowDrop(event)">
+                                      <img src="image\A1.png" class="op2" draggable="true" ondragstart="drag(event)" id="drag1">
+                                      <img src="image\A2.png" class="op2" draggable="true" ondragstart="drag(event)" id="drag2">
+                                      <img src="image\A3.png" class="op2" draggable="true" ondragstart="drag(event)" id="drag3">
+                                      <img src="image\A4.png" class="op2" draggable="true" ondragstart="drag(event)" id="drag4">
+                                      <img src="image\A5.png" class="op2" draggable="true" ondragstart="drag(event)" id="drag5">
+                                      <img src="image\A6.png" class="op2" draggable="true" ondragstart="drag(event)" id="drag6">
+                                      <img src="image\A7.png" class="op2" draggable="true" ondragstart="drag(event)" id="drag7">
+                                      <img src="image\A8.png" class="op2" draggable="true" ondragstart="drag(event)" id="drag8">
+                                  </div><br>
+                                <table>
+                                    <tr>
+                                        <td>राज्य</td>
+                                        <td><div ondrop="drop(event)" ondragover="allowDrop(event)" class="du"></div></td>
+                                        <td style="visibility: hidden;">hidden</td>
+                                        <td>पत्र</td>
+                                        <td><div ondrop="drop(event)" ondragover="allowDrop(event)" class="du"></div></td>
+                                    </tr>
+                                    <tr>
+                                        <td>दरबार</td>
+                                        <td><div ondrop="drop(event)" ondragover="allowDrop(event)" class="du"></div></td>
+                                        <td style="visibility: hidden;">hidden</td>
+                                        <td>सैनिक</td>
+                                        <td><div ondrop="drop(event)" ondragover="allowDrop(event)" class="du"></div></td>
+                                    </tr>
+                                    <tr>
+                                        <td>संगीतकार</td>
+                                        <td><div ondrop="drop(event)" ondragover="allowDrop(event)" class="du"></div></td>
+                                        <td style="visibility: hidden;">hidden</td>
+                                        <td>इंसान</td>
+                                        <td><div ondrop="drop(event)" ondragover="allowDrop(event)" class="du"></div></td>
+                                    </tr>
+                                    <tr>
+                                        <td>रत्न</td>
+                                        <td><div ondrop="drop(event)" ondragover="allowDrop(event)" class="du"></div></td>
+                                        <td style="visibility: hidden;">hidden</td>
+                                        <td>कर्म</td>
+                                        <td><div ondrop="drop(event)" ondragover="allowDrop(event)" class="du"></div></td>
+                                    </tr>
+                                </table>
+                                </div>
+                                 <span style="margin-left: 405px;"> 
+                                    <img src="image\QBACK.png" id='qback' style="height: 25px;width: 25px;">&nbsp;
+                                    <img src="image\RESET.png" style="height: 35px;width: 75px;">&nbsp;
+                                    <img src="image\QNEXT.png" id='qnext' style="height: 25px;width: 25px;">
+                                </span>
                             </div>
                          </div> 
                     </div>  
                  </div>
                   <div id="anima">
+                      <div style="position: fixed;width: 70em;margin-top: 5px;">
+                          <img src="image/Arrow.png" style="height: 15px;width: 40px;margin-left: 26.5vh;">
+                          <img src="image/Arrow.png" style="height: 15px;width: 40px;margin-left: 24vh;">
+                          <img src="image/Arrow.png" style="height: 15px;width: 40px;margin-left: 45vh;">
+                      </div>
                     <ul>
                       <li><button class="p" data-video-url='Birbal ki soojh boojh.mp4'>ANIMATION</button></li>
-                      <li><button class="p" style="font-family: Nirmala UI;font-size: 15px;width: 70px;font-weight: bold;">अभ्यास</button></li>
+                      <li class="dropup"><button class="p" style="font-family: Nirmala UI;font-size: 15px;width: 70px;font-weight: bold;">अभ्यास</button>
+                          <div class="dropup-content">
+                           <a href="#" style="background-color: cyan;">उच्चारण - सुनो,पढ़ो और लिखो </a>
+                           <a href="#" style="background-color: greenyellow;">शब्द ज्ञान</a>
+                           <a href="#" style="background-color: orange;">वर्तनी ज्ञान</a>
+                           <a href="#" style="background-color: plum;">अंग्रेजी भाषा के प्रचलित शब्द</a>
+                          </div>
+                      </li>
                       <li><button class="p" data-video-url='Slide show.mp4'>SLIDE SHOW</button></li>
-                      <li><button class="p" name="quiz">QUIZ CONTEST</button></li>
+                      <li class="dropup"><button class="p" name="quiz">QUIZ CONTEST</button>
+                          <div class="dropup-content">
+                           <a href="#" style="background-color: cyan;">अन्य</a>
+                           <a href="#" style="background-color: greenyellow;">बहुविकल्पीय</a>
+                           <a href="#" style="background-color: orange;">सही गलत</a>
+                           <a href="#" style="background-color: plum;">रिक्त स्थान</a>
+                          </div>
+                      </li>
                       <li><button class="p" data-video-url='Yogyta Vistar.mp4' style="font-size: 13px; font-family: Nirmala UI;font-weight: bold;">योग्यता विस्तार</button></li>
                       <li><button class="p" data-video-url='Concept Map.mp4' style="width: 115px;">CONCEPT MAP</button></li>
-                      <li><button class="p" data-video-url='Rachnaa kaar.mp4' style="font-size: 13px;font-family: Nirmala UI;font-weight: bold;">रचना का संसार</button></li>
+                      <li class="dropup"><button class="p" data-video-url='Rachnaa kaar.mp4' style="font-size: 13px;font-family: Nirmala UI;font-weight: bold;">रचना का संसार</button>
+                          <div class="dropup-content">
+                           <a href="#" style="background-color: greenyellow;">गतिविधियां</a>
+                           <a href="#" style="background-color: orange;">Indoor Activities</a>
+                           <a href="#" style="background-color: plum;">Outdoor Activities</a>
+                          </div>
+                      </li>
                       <li><button class="p" data-video-url='Lifeskill and Values.mp4' style="font-size: 12px;width: 135px;">LIFE SKILL AND VALUES</button></li>
                       <li><button class="p" style="font-size: 13px;font-family: Nirmala UI;font-weight: bold;">वर्तनी ज्ञान</button></li>
                     </ul>
@@ -347,42 +181,41 @@ and open the template in the editor.
         </div>
      </div>
         <div style="float: left;position: fixed;right:0;top: 0;width: 140px;height: 95vh;;">
-            <img src="Logo.png" style="margin-top: 33px;;margin-left: 48px;height: 60px;">
+            <img src="image\Logo.png" style="margin-top: 33px;;margin-left: 48px;height: 60px;">
             <br><br>
             <button class="side" style="background-color: #E5097F">मूल भाव</button><br>
             <button class="side" style="background-color: #00A0E3">रचनाकार</button><br>
             <button class="side" style="background-color: #EA5E20">अध्यापन संकेत</button><br><br>
-            <img src="QG_Button.png" style="height: 175px;margin-left: 40px;"><br><br>
-           <img src="Asset 17.png" style="margin-top: 12px;display: none;" class="ak"><br>
-           <img src="Asset 21.png" class="ak"><br>
-           <img src="Asset 20.png" class="ak">
+            <img src="image\QG_Button.png" style="height: 175px;margin-left: 40px;"><br><br>
+           <img src="image\Asset 17.png" style="margin-top: 12px;display: none;" class="ak"><br>
+           <img src="image\Asset 21.png" class="ak"><br>
+           <img src="image\Asset 30.png" class="ak">
         </div>
         <div class="footer" id="y">
             <div>
                 <center>
                       <div class="tooltip">
                           <span class="tooltipleft">Previous</span>
-                          <div id="prev" style="padding-top: 11px;"><img src="PrevButton.png" style="height: 27px;"></div>
+                          <div id="prev" style="padding-top: 11px;"><img src="image\PrevButton.png" style="height: 27px;"></div>
                       </div>
-                    <img src="Seek_Box.png" style="height: 27px;">
+                    <img src="image\Seek_Box.png" style="height: 27px;">
                       <div class="tooltip">
                           <span class="tooltipright">Next</span>
-                          <div id="next"><img src="NextButton.png" style="height: 27px;"></div> 
+                          <div id="next"><img src="image\NextButton.png" style="height: 27px;"></div> 
                       </div>
                 </center>
                   </div>
         </div>
-    <!style="background-color: yellow; float: left; min-height: 88vh;width: 170px;"
-       style="background-color: greenyellow; float:bottom; height: 63px;" 
-        !>
     <script>
         // play video in parfticular div
          var video=document.getElementById("player");
          $(document).ready(function(){
                  $(".p").click(function(){
                  $("#myDIV").show();
+                 $("#player").show();
                  $("#page").hide();
                  $("#page1").hide();
+                 $("#quiz").hide();
             });
                  $(".ch").click(function(){
                  $("#myDIV").hide();
@@ -393,11 +226,20 @@ and open the template in the editor.
                  $(".ak").show();
             });
                 $('[name="quiz"]').click(function(){
-                 $("#myDIV").show();
-                 $("#page").hide();
-                 $("#page1").hide();  
-                 $("#player").hide();
-                });
+                $("#myDIV").show();
+                $("#quiz").show();
+                $("#page").hide();
+                $("#page1").hide();  
+                $("#player").hide();
+            });
+                $("#qnext").click(function(){
+                $("#fill").hide();
+                $("#plural").show();
+            });
+                $("#qback").click(function(){
+                $("#plural").hide();
+                $("#fill").show();
+            });
         });
         
         //next and prev function
@@ -408,17 +250,17 @@ and open the template in the editor.
        
         function Birbal(){
              count = 0;
-                im1.setAttribute('src','Pg-14.jpg');
-                im2.setAttribute('src','Pg-15.jpg');
+                im1.setAttribute('src','image/Pg-14.jpg');
+                im2.setAttribute('src','image/Pg-15.jpg');
             next.onclick = function() {
             count += 1;
              if(count==1){
-                im1.setAttribute('src','Pg-16.jpg');
-                im2.setAttribute('src','Pg-17.jpg');
+                im1.setAttribute('src','image/Pg-16.jpg');
+                im2.setAttribute('src','image/Pg-17.jpg');
             }
             else if(count==2){
-                im1.setAttribute('src','Pg-18.jpg');
-                im2.setAttribute('src','Pg-19.jpg');
+                im1.setAttribute('src','image/Pg-18.jpg');
+                im2.setAttribute('src','image/Pg-19.jpg');
             }
             else if(count>2){
                 $("#next").prop('disabled',true);
@@ -427,13 +269,13 @@ and open the template in the editor.
             prev.onclick=function(){
                 count=count-1;
                 if(count==1){
-                im1.setAttribute('src','Pg-16.jpg');
-                im2.setAttribute('src','Pg-17.jpg');
+                im1.setAttribute('src','image/Pg-16.jpg');
+                im2.setAttribute('src','image/Pg-17.jpg');
             }
             else if(count==0)
             {
-                im1.setAttribute('src','Pg-14.jpg');
-                im2.setAttribute('src','Pg-15.jpg');
+                im1.setAttribute('src','image/Pg-14.jpg');
+                im2.setAttribute('src','image/Pg-15.jpg');
             }
             }
         }
@@ -449,6 +291,9 @@ and open the template in the editor.
                  this.className += " active";
              });
             }
+    //onfocus true or false functionality
+            
+   //play different video on different button in a single div
     function swapVideo() {
     player.src = this.getAttribute("data-video-url");
     player.load();
