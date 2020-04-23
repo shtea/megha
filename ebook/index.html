@@ -25,11 +25,28 @@ and open the template in the editor.
     function drag(ev) {
         ev.dataTransfer.setData("text", ev.target.id);
     }
-
+    
     function drop(ev) {
         ev.preventDefault();
         var data = ev.dataTransfer.getData("text");
+        var dropData = ev.target.getAttribute("data-draggable-id");
+        var draggableElements = document.getElementById(data);
+        var ans = document.getElementById("ans");
+        var visi= document.getElementById("visi"); 
         ev.target.appendChild(document.getElementById(data));
+        var isCorrectMatching = data === dropData;
+        if(isCorrectMatching){
+            
+            draggableElements.setAttribute("draggable", "false");
+            ans.setAttribute("src","image/Y.png");
+            visi.style.visibility="visible";
+        }
+        else{
+            
+            draggableElements.setAttribute("draggable", "false");
+            ans.setAttribute("src","image/X.png");
+            visi.style.visibility="visible";
+        }
     } 
         </script>
     </head>
@@ -40,7 +57,7 @@ and open the template in the editor.
                     <a href="index.html"><img src="image\Title.png" style="width:208px; margin-top: 3px; height: 150px;"></a>
                       <div class="on-scrollbar" onscroll="myFunction()" >
                           <div id="btn">
-                              <button class="ch">सीखो</button><br>
+                        <button class="ch">सीखो</button><br>
                         <button class="ch" onclick="Birbal();">बीरबल की चतुराई</button><br>
                         <button class="ch">सुंदर कौन</button><br>
                         <button class="ch">जागो प्यारे</button><br>
@@ -76,16 +93,16 @@ and open the template in the editor.
                                       <img src="image\T4.png" class="op" draggable="true" ondragstart="drag(event)" id="drag12">
                                       <img src="image\T5.png" class="op" draggable="true" ondragstart="drag(event)" id="drag13">
                                   </div><br>
-                                  <label>(क)</label><label> बीरबल <span ondrop="drop(event)" ondragover="allowDrop(event)" class="du1" id="dis"></span> के वजीर थे l</label>
-                                  <span style="visibility: hidden;">&nbsp;<img src="" style="height: 20px;width: 25px;"></span><br><br>
+                                  <label>(क)</label><label> बीरबल <span ondrop="drop(event)" ondragover="allowDrop(event)" class="du1" data-draggable-id="drag12"></span> के वजीर थे l</label>
+                                  <span style="visibility: hidden;" id="visi">&nbsp;<img src="" style="height: 20px;width: 25px;" id="ans"></span><br><br>
                                
-                                  <label>(ख)</label><label> बीरबल <span ondrop="drop(event)" ondragover="allowDrop(event)" class="du1"></span> के लिए पूरे राज्य में प्रसिद्ध थे l</label><br><br>
+                                  <label>(ख)</label><label> बीरबल <span ondrop="drop(event)" ondragover="allowDrop(event)" class="du1" data-draggable-id="drag9"></span> के लिए पूरे राज्य में प्रसिद्ध थे l</label><br><br>
                                 
-                                  <label>(ग)</label><label> तानसेन बहुत बडे <span ondrop="drop(event)" ondragover="allowDrop(event)" class="du1"></span> थे l</label><br><br>
+                                  <label>(ग)</label><label> तानसेन बहुत बडे <span ondrop="drop(event)" ondragover="allowDrop(event)" class="du1" data-draggable-id="drag10"></span> थे l</label><br><br>
                                 
-                                  <label>(घ)</label><label> पत्र में दोनों को <span ondrop="drop(event)" ondragover="allowDrop(event)" class="du1"></span> पर चढ़ाने की सजा लिखी थी l</label><br><br>
+                                  <label>(घ)</label><label> पत्र में दोनों को <span ondrop="drop(event)" ondragover="allowDrop(event)" class="du1" data-draggable-id="drag13"></span> पर चढ़ाने की सजा लिखी थी l</label><br><br>
                                 
-                                  <label>(ड)</label><label> दोनों में फ़ासी पर चढ़ाने की <span ondrop="drop(event)" ondragover="allowDrop(event)" class="du1"></span> लग गई l</label>
+                                  <label>(ड)</label><label> दोनों में फ़ासी पर चढ़ाने की <span ondrop="drop(event)" ondragover="allowDrop(event)" class="du1" data-draggable-id="drag11"></span> लग गई l</label>
                                 </div>
                                 <div id='plural' style="display: none;">
                                   <h2>दिए गए शब्दों को बहुवचन में बदलो-</h2>
@@ -136,6 +153,29 @@ and open the template in the editor.
                                     <img src="image\QNEXT.png" id='qnext' style="height: 25px;width: 25px;">
                                 </span>
                             </div>
+                            <div id="slide_show">
+                                <div id="slide_div1">
+                                    <div id="back1">
+                                        <img src="image/1-story.jpg" id="im3">
+                                    </div>
+                                    <img src="image\QBACK.png" id="sback">
+                                </div>
+                                <div id="slide_div2">
+                                    <div id="back2">
+                                        <img src="image/1-story.jpg" id="im4">
+                                    </div>
+                                </div>
+                                <div id="slide_div3">
+                                    <div id="back3" >
+                                        <img src="image/2-story.jpg" id="im5" >
+                                    </div>
+                                    <img src="image\QNEXT.png" id="snext">
+                                </div>
+                                <div id="slide_div4">
+                                    <center><span ></span>&nbsp;&nbsp;
+                                        <span ><img src="image/Replay.png" style="height: 22px;"></span></center>
+                                </div>
+                            </div>
                          </div> 
                     </div>  
                  </div>
@@ -155,7 +195,7 @@ and open the template in the editor.
                            <a href="#" style="background-color: plum;">अंग्रेजी भाषा के प्रचलित शब्द</a>
                           </div>
                       </li>
-                      <li><button class="p" data-video-url='Slide show.mp4'>SLIDE SHOW</button></li>
+                      <li><button class="p" name="slide" onclick="slide();">SLIDE SHOW</button></li>
                       <li class="dropup"><button class="p" name="quiz">QUIZ CONTEST</button>
                           <div class="dropup-content">
                            <a href="#" style="background-color: cyan;">अन्य</a>
@@ -216,6 +256,7 @@ and open the template in the editor.
                  $("#page").hide();
                  $("#page1").hide();
                  $("#quiz").hide();
+                 $("#slide_show").hide();
             });
                  $(".ch").click(function(){
                  $("#myDIV").hide();
@@ -231,6 +272,7 @@ and open the template in the editor.
                 $("#page").hide();
                 $("#page1").hide();  
                 $("#player").hide();
+                $("#slide_show").hide();
             });
                 $("#qnext").click(function(){
                 $("#fill").hide();
@@ -239,6 +281,18 @@ and open the template in the editor.
                 $("#qback").click(function(){
                 $("#plural").hide();
                 $("#fill").show();
+            });
+                $('[name="slide"]').click(function(){
+                $("#myDIV").show();
+                $("#slide_show").show();
+                $("#quiz").hide();
+                $("#page").hide();
+                $("#page1").hide();  
+                $("#player").hide();
+            });
+                $("#snext").click(function(){
+                $("#back2").show();
+                $("#back3").show();
             });
         });
         
@@ -291,8 +345,80 @@ and open the template in the editor.
                  this.className += " active";
              });
             }
-    //onfocus true or false functionality
-            
+    //slide show next and previous functionality
+            var snext=document.getElementById("snext");
+            var sback=document.getElementById("sback");
+            var im3=document.getElementById("im3");
+            var im4=document.getElementById("im4");
+            var im5=document.getElementById("im5");
+            var back1=document.getElementById("back1");
+            var back3=document.getElementById("back3");
+            function slide()
+            {
+                count=0;
+                snext.onclick=function(){
+                    count += 1;                
+                    if(count==2)
+                    {
+                        im4.setAttribute('src','image/2-story.jpg');
+                        im5.setAttribute('src','image/3-story.jpg');
+                        sback.style.visibility="visible";
+                        back1.style.visibility="visible";
+                    }
+                    else if(count==3){
+                        im4.setAttribute('src','image/3-story.jpg');
+                        im5.setAttribute('src','image/4-story.jpg');
+                        im3.setAttribute('src','image/2-story.jpg');
+                    }
+                    else if(count==4){
+                        im4.setAttribute('src','image/4-story.jpg');
+                        im5.setAttribute('src','image/5-story.jpg');
+                        im3.setAttribute('src','image/3-story.jpg');
+                    }
+                    else if(count==5){
+                        im4.setAttribute('src','image/5-story.jpg');
+                        im5.setAttribute('src','image/6-story.jpg');
+                        im3.setAttribute('src','image/4-story.jpg');
+                    }
+                    else if(count==6){
+                        im4.setAttribute('src','image/6-story.jpg');
+                        im3.setAttribute('src','image/5-story.jpg');
+                        snext.style.visibility="hidden";
+                        back3.style.visibility="hidden";
+                    }
+                }
+                sback.onclick=function(){
+                    count=count-1;
+                    if(count==5){
+                        im3.setAttribute('src','image/4-story.jpg');
+                        im4.setAttribute('src','image/5-story.jpg');
+                        im5.setAttribute('src','image/6-story.jpg');
+                        snext.style.visibility="visible";
+                        back3.style.visibility="visible";
+                    }
+                    else if(count==4){
+                        im3.setAttribute('src','image/3-story.jpg');
+                        im4.setAttribute('src','image/4-story.jpg');
+                        im5.setAttribute('src','image/5-story.jpg');
+                    }
+                    else if(count==3){
+                        im3.setAttribute('src','image/2-story.jpg');
+                        im4.setAttribute('src','image/3-story.jpg');
+                        im5.setAttribute('src','image/4-story.jpg');
+                    }
+                    else if(count==2){
+                        im3.setAttribute('src','image/1-story.jpg');
+                        im4.setAttribute('src','image/2-story.jpg');
+                        im5.setAttribute('src','image/3-story.jpg');
+                    }
+                    else if(count==1){
+                        im4.setAttribute('src','image/1-story.jpg');
+                        im5.setAttribute('src','image/2-story.jpg');
+                        sback.style.visibility="hidden";
+                        back1.style.visibility="hidden";
+                    }
+                }
+            }
    //play different video on different button in a single div
     function swapVideo() {
     player.src = this.getAttribute("data-video-url");
