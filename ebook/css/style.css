@@ -18,7 +18,7 @@ body{
                  background-repeat: no-repeat;
                  background-size: 100% 100%;
                 min-height: 87vh;
-                width: 153vh;
+                width: 151.2vh;
                 float: left;
                 position: fixed;
                 top: 0;
@@ -101,7 +101,7 @@ body{
                 font-weight: bolder;
             }
             
-            .p:hover{
+            .p:hover,.focus{
                 background-image: url("../image/Animation_Button_Hover.png");
                 border: none;
                 background-size: 100% 100%;
@@ -119,7 +119,7 @@ body{
                 display: none;
                 background-color: #00522D;
                 min-height: 87vh;
-                width: 153vh;
+                width: 151.2vh;
                 float: left;
                 position: fixed;
                 top: 0;
