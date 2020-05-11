@@ -198,145 +198,160 @@ and open the template in the editor.
         </script>
     </head>
     <body>
-            <div class="w3-container">
-              <div id="main" class="w3-row">
-                <div class="w3-col s2" style="float: left;position: fixed;top: 0;line-height: 2.2;">
-                    <a href="index.html"><img src="image\Title.png" style="width:208px; margin-top: 3px; height: 150px;"></a>
-                      <div class="on-scrollbar" onscroll="myFunction()" >
-                          <div id="btn">
-                        <button class="ch">सीखो</button><br>
-                        <button class="ch" onclick="Birbal();">बीरबल की चतुराई</button><br>
-                        <button class="ch">सुंदर कौन</button><br>
-                        <button class="ch">जागो प्यारे</button><br>
-                        <button class="ch">चंदामामा</button><br>
-                        <button class="ch">स्वछता</button><br>
-                        <button class="ch">घमंडी का सिर नीचा</button><br>
-                        <button class="ch">पौधे की आत्मकथा</button><br>
-                        <button class="ch">तितली</button><br>
-                        <button class="ch">हमरा राष्ट्रीय पशू 'बाघ'</button><br>
-                        <button class="ch">सीखो</button><br>
-                        <button class="ch">सीखो</button><br>
-                        <button class="ch">सीखो</button><br>
-                          </div>
-                      </div >
-                      </div> 
-                 <div id="z" class="w3-col s10">
-                     <div class="w3-row">
-                         <div class="w3-col-s6" style="float: left;margin-left: 9px;margin-top: 9px;" id="page">
-                             <img src="image\page.png" style="height: 559px; width: 491px;" id="im1">
-                         </div>
-                         <div class="w3-col-s6" id="page1" style="margin-top: 9px;float: right;margin-right: 12px;">
-                             <img src="image\Frontcover.jpg" style="height: 559px; width:490px;" id="im2">
-                         </div>
-                         <div class="w3-col s10" id="myDIV">
-                            <video id="player" controls></video> 
-                            <div id='quiz'>
-                              <div id='fill'>
-                                  <h2>दिए गए शब्दों की सहायता से खाली स्थान भरो-</h2>
-                                  <div id='option' ondragover="allowDrop(event)">
-                                      <img src="image\T1.png" class="op" draggable="true" ondragstart="drag(event)" id="drag9">
-                                      <img src="image\T2.png" class="op" draggable="true" ondragstart="drag(event)" id="drag10">
-                                      <img src="image\T3.png" class="op" draggable="true" ondragstart="drag(event)" id="drag11">
-                                      <img src="image\T4.png" class="op" draggable="true" ondragstart="drag(event)" id="drag12">
-                                      <img src="image\T5.png" class="op" draggable="true" ondragstart="drag(event)" id="drag13">
-                                  </div><br>
-                                  <label>(क)</label><label> बीरबल <span ondrop="drop(event)" ondragover="allowDrop(event)" class="du1" data-draggable-id="drag12" data-id="span0"></span> के वजीर थे l</label>
-                                  <span style="visibility: hidden;" id="visi0">&nbsp;<img src="" style="height: 20px;width: 25px;" id="ans0"></span><br><br>
+      <div class="w3-container">
+        <div id="main" class="w3-row">
+           <div class="w3-col s2" style="float: left;position: fixed;top: 0;line-height: 2.2;">
+             <a href="index.html"><img src="image\Title.png" style="width:208px; margin-top: 3px; height: 150px;"></a>
+                <div class="on-scrollbar" onscroll="myFunction()" >
+                   <div id="btn">
+                     <button class="ch">सीखो</button><br>
+                     <button class="ch" onclick="Birbal();">बीरबल की चतुराई</button><br>
+                     <button class="ch">सुंदर कौन</button><br>
+                     <button class="ch">जागो प्यारे</button><br>
+                     <button class="ch">चंदामामा</button><br>
+                     <button class="ch">स्वछता</button><br>
+                     <button class="ch">घमंडी का सिर नीचा</button><br>
+                     <button class="ch">पौधे की आत्मकथा</button><br>
+                     <button class="ch">तितली</button><br>
+                     <button class="ch">हमरा राष्ट्रीय पशू 'बाघ'</button><br>
+                     <button class="ch">सीखो</button><br>
+                     <button class="ch">सीखो</button><br>
+                     <button class="ch">सीखो</button><br>
+                  </div>
+               </div >
+            </div> 
+            <div id="z" class="w3-col s10">
+              <div class="w3-row">
+                 <div class="w3-col-s6" style="float: left;margin-left: 9px;margin-top: 9px;" id="page">
+                     <img src="image\page.png" style="height: 559px; width: 491px;" id="im1">
+                 </div>
+                 <div class="w3-col-s6" id="page1" style="margin-top: 9px;float: right;margin-right: 12px;">
+                     <img src="image\Frontcover.jpg" style="height: 559px; width:490px;" id="im2">
+                 </div>
+                 <div class="w3-col s10" id="myDIV">
+                     <video id="player" controls></video> 
+                        <div id='quiz'>
+                           <div id='fill'>
+                              <h2>दिए गए शब्दों की सहायता से खाली स्थान भरो-</h2>
+                              <div id='option' ondragover="allowDrop(event)">
+                                 <img src="image\T1.png" class="op" draggable="true" ondragstart="drag(event)" id="drag9">
+                                 <img src="image\T2.png" class="op" draggable="true" ondragstart="drag(event)" id="drag10">
+                                 <img src="image\T3.png" class="op" draggable="true" ondragstart="drag(event)" id="drag11">
+                                 <img src="image\T4.png" class="op" draggable="true" ondragstart="drag(event)" id="drag12">
+                                 <img src="image\T5.png" class="op" draggable="true" ondragstart="drag(event)" id="drag13">
+                              </div><br>
+                            <label>(क)</label><label> बीरबल <span ondrop="drop(event)" ondragover="allowDrop(event)" class="du1" data-draggable-id="drag12" data-id="span0"></span> के वजीर थे l</label>
+                            <span style="visibility: hidden;" id="visi0">&nbsp;<img src="" style="height: 20px;width: 25px;" id="ans0"></span><br><br>
                                
-                                  <label>(ख)</label><label> बीरबल <span ondrop="drop(event)" ondragover="allowDrop(event)" class="du1" data-draggable-id="drag9" data-id="span1"></span> के लिए पूरे राज्य में प्रसिद्ध थे l</label>
-                                  <span style="visibility: hidden;" id="visi1">&nbsp;<img src="" style="height: 20px;width: 25px;" id="ans1"></span><br><br>
+                            <label>(ख)</label><label> बीरबल <span ondrop="drop(event)" ondragover="allowDrop(event)" class="du1" data-draggable-id="drag9" data-id="span1"></span> के लिए पूरे राज्य में प्रसिद्ध थे l</label>
+                            <span style="visibility: hidden;" id="visi1">&nbsp;<img src="" style="height: 20px;width: 25px;" id="ans1"></span><br><br>
                                 
-                                  <label>(ग)</label><label> तानसेन बहुत बडे <span ondrop="drop(event)" ondragover="allowDrop(event)" class="du1" data-draggable-id="drag10" data-id="span2"></span> थे l</label>
-                                  <span style="visibility: hidden;" id="visi2">&nbsp;<img src="" style="height: 20px;width: 25px;" id="ans2"></span><br><br>
+                            <label>(ग)</label><label> तानसेन बहुत बडे <span ondrop="drop(event)" ondragover="allowDrop(event)" class="du1" data-draggable-id="drag10" data-id="span2"></span> थे l</label>
+                            <span style="visibility: hidden;" id="visi2">&nbsp;<img src="" style="height: 20px;width: 25px;" id="ans2"></span><br><br>
                                 
-                                  <label>(घ)</label><label> पत्र में दोनों को <span ondrop="drop(event)" ondragover="allowDrop(event)" class="du1" data-draggable-id="drag13" data-id="span3"></span> पर चढ़ाने की सजा लिखी थी l</label>
-                                  <span style="visibility: hidden;" id="visi3">&nbsp;<img src="" style="height: 20px;width: 25px;" id="ans3"></span><br><br>
+                            <label>(घ)</label><label> पत्र में दोनों को <span ondrop="drop(event)" ondragover="allowDrop(event)" class="du1" data-draggable-id="drag13" data-id="span3"></span> पर चढ़ाने की सजा लिखी थी l</label>
+                            <span style="visibility: hidden;" id="visi3">&nbsp;<img src="" style="height: 20px;width: 25px;" id="ans3"></span><br><br>
                                 
-                                  <label>(ड)</label><label> दोनों में फ़ासी पर चढ़ाने की <span ondrop="drop(event)" ondragover="allowDrop(event)" class="du1" data-draggable-id="drag11" data-id="span4"></span> लग गई l</label>
-                                  <span style="visibility: hidden;" id="visi4">&nbsp;<img src="" style="height: 20px;width: 25px;" id="ans4"></span>
-                                </div>
-                                <div id='plural' style="display: none;">
-                                  <h2>दिए गए शब्दों को बहुवचन में बदलो-</h2>
-                                  <div id='option2' ondragover="allowDrop(event)">
-                                      <img src="image\A1.png" class="op2" draggable="true" ondragstart="drag(event)" id="drag1">
-                                      <img src="image\A2.png" class="op2" draggable="true" ondragstart="drag(event)" id="drag2">
-                                      <img src="image\A3.png" class="op2" draggable="true" ondragstart="drag(event)" id="drag3">
-                                      <img src="image\A4.png" class="op2" draggable="true" ondragstart="drag(event)" id="drag4">
-                                      <img src="image\A5.png" class="op2" draggable="true" ondragstart="drag(event)" id="drag5">
-                                      <img src="image\A6.png" class="op2" draggable="true" ondragstart="drag(event)" id="drag6">
-                                      <img src="image\A7.png" class="op2" draggable="true" ondragstart="drag(event)" id="drag7">
-                                      <img src="image\A8.png" class="op2" draggable="true" ondragstart="drag(event)" id="drag8">
-                                  </div><br>
-                                <table>
-                                    <tr>
-                                        <td>राज्य</td>
-                                        <td><div ondrop="drop(event)" ondragover="allowDrop(event)" class="du" data-draggable-id="drag6" data-id="qdiv1"></div></td>
-                                        <td><span style="visibility: hidden;" id="visi5">&nbsp;<img src="" style="height: 20px;width: 25px;" id="ans5"></span></td>
-                                        <td style="visibility: hidden;">hidden</td>
-                                        <td>पत्र</td>
-                                        <td><div ondrop="drop(event)" ondragover="allowDrop(event)" class="du" data-draggable-id="drag8" data-id="qdiv2"></div></td>
-                                        <td><span style="visibility: hidden;" id="visi6">&nbsp;<img src="" style="height: 20px;width: 25px;" id="ans6"></span></td>
-                                    </tr>
-                                    <tr>
-                                        <td>दरबार</td>
-                                        <td><div ondrop="drop(event)" ondragover="allowDrop(event)" class="du" data-draggable-id="drag4" data-id="qdiv3"></div></td>
-                                        <td><span style="visibility: hidden;" id="visi7">&nbsp;<img src="" style="height: 20px;width: 25px;" id="ans7"></span></td>
-                                        <td style="visibility: hidden;">hidden</td>
-                                        <td>सैनिक</td>
-                                        <td><div ondrop="drop(event)" ondragover="allowDrop(event)" class="du" data-draggable-id="drag3" data-id="qdiv4"></div></td>
-                                        <td><span style="visibility: hidden;" id="visi8">&nbsp;<img src="" style="height: 20px;width: 25px;" id="ans8"></span></td>
-                                    </tr>
-                                    <tr>
-                                        <td>संगीतकार</td>
-                                        <td><div ondrop="drop(event)" ondragover="allowDrop(event)" class="du" data-draggable-id="drag5" data-id="qdiv5"></div></td>
-                                        <td><span style="visibility: hidden;" id="visi9">&nbsp;<img src="" style="height: 20px;width: 25px;" id="ans9"></span></td>
-                                        <td style="visibility: hidden;">hidden</td>
-                                        <td>इंसान</td>
-                                        <td><div ondrop="drop(event)" ondragover="allowDrop(event)" class="du" data-draggable-id="drag2" data-id="qdiv6"></div></td>
-                                        <td><span style="visibility: hidden;" id="visi10">&nbsp;<img src="" style="height: 20px;width: 25px;" id="ans10"></span></td>
-                                    </tr>
-                                    <tr>
-                                        <td>रत्न</td>
-                                        <td><div ondrop="drop(event)" ondragover="allowDrop(event)" class="du" data-draggable-id="drag1" data-id="qdiv7"></div></td>
-                                        <td><span style="visibility: hidden;" id="visi11">&nbsp;<img src="" style="height: 20px;width: 25px;" id="ans11"></span></td>
-                                        <td style="visibility: hidden;">hidden</td>
-                                        <td>कर्म</td>
-                                        <td><div ondrop="drop(event)" ondragover="allowDrop(event)" class="du" data-draggable-id="drag7" data-id="qdiv8"></div></td>
-                                        <td><span style="visibility: hidden;" id="visi12">&nbsp;<img src="" style="height: 20px;width: 25px;" id="ans12"></span></td>
-                                    </tr>
-                                </table>
-                                </div>
-                                 <span style="margin-left: 405px;"> 
-                                    <img src="image\QBACK.png" id='qback' style="height: 25px;width: 25px;">&nbsp;
-                                    <img src="image\RESET.png" style="height: 35px;width: 75px;">&nbsp;
-                                    <img src="image\QNEXT.png" id='qnext' style="height: 25px;width: 25px;">
-                                </span>
-                            </div>
-                            <div id="slide_show">
-                                <div id="slide_div1">
-                                    <div id="back1">
-                                        <img src="image/1-story.jpg" id="im3">
-                                    </div>
-                                    <img src="image\QBACK.png" id="sback">
-                                </div>
-                                <div id="slide_div2">
-                                    <div id="back2">
-                                        <img src="image/1-story.jpg" id="im4">
-                                    </div>
-                                </div>
-                                <div id="slide_div3">
-                                    <div id="back3" >
-                                        <img src="image/2-story.jpg" id="im5" >
-                                    </div>
-                                    <img src="image\QNEXT.png" id="snext">
-                                </div>
-                                <div id="slide_div4">
-                                    <center><span ></span>&nbsp;&nbsp;
-                                        <span ><img src="image/Replay.png" style="height: 22px;"></span></center>
-                                </div>
-                            </div>
-                         </div> 
-                    </div>  
+                            <label>(ड)</label><label> दोनों में फ़ासी पर चढ़ाने की <span ondrop="drop(event)" ondragover="allowDrop(event)" class="du1" data-draggable-id="drag11" data-id="span4"></span> लग गई l</label>
+                            <span style="visibility: hidden;" id="visi4">&nbsp;<img src="" style="height: 20px;width: 25px;" id="ans4"></span>
+                        </div>
+                        <div id='plural' style="display: none;">
+                           <h2>दिए गए शब्दों को बहुवचन में बदलो-</h2>
+                           <div id='option2' ondragover="allowDrop(event)">
+                              <img src="image\A1.png" class="op2" draggable="true" ondragstart="drag(event)" id="drag1">
+                              <img src="image\A2.png" class="op2" draggable="true" ondragstart="drag(event)" id="drag2">
+                              <img src="image\A3.png" class="op2" draggable="true" ondragstart="drag(event)" id="drag3">
+                              <img src="image\A4.png" class="op2" draggable="true" ondragstart="drag(event)" id="drag4">
+                              <img src="image\A5.png" class="op2" draggable="true" ondragstart="drag(event)" id="drag5">
+                              <img src="image\A6.png" class="op2" draggable="true" ondragstart="drag(event)" id="drag6">
+                              <img src="image\A7.png" class="op2" draggable="true" ondragstart="drag(event)" id="drag7">
+                              <img src="image\A8.png" class="op2" draggable="true" ondragstart="drag(event)" id="drag8">
+                           </div><br>
+                            <table>
+                              <tr>
+                                 <td>राज्य</td>
+                                 <td><div ondrop="drop(event)" ondragover="allowDrop(event)" class="du" data-draggable-id="drag6" data-id="qdiv1"></div></td>
+                                 <td><span style="visibility: hidden;" id="visi5">&nbsp;<img src="" style="height: 20px;width: 25px;" id="ans5"></span></td>
+                                 <td style="visibility: hidden;">hidden</td>
+                                 <td>पत्र</td>
+                                 <td><div ondrop="drop(event)" ondragover="allowDrop(event)" class="du" data-draggable-id="drag8" data-id="qdiv2"></div></td>
+                                 <td><span style="visibility: hidden;" id="visi6">&nbsp;<img src="" style="height: 20px;width: 25px;" id="ans6"></span></td>
+                               </tr>
+                               <tr>
+                                 <td>दरबार</td>
+                                 <td><div ondrop="drop(event)" ondragover="allowDrop(event)" class="du" data-draggable-id="drag4" data-id="qdiv3"></div></td>
+                                 <td><span style="visibility: hidden;" id="visi7">&nbsp;<img src="" style="height: 20px;width: 25px;" id="ans7"></span></td>
+                                 <td style="visibility: hidden;">hidden</td>
+                                 <td>सैनिक</td>
+                                 <td><div ondrop="drop(event)" ondragover="allowDrop(event)" class="du" data-draggable-id="drag3" data-id="qdiv4"></div></td>
+                                 <td><span style="visibility: hidden;" id="visi8">&nbsp;<img src="" style="height: 20px;width: 25px;" id="ans8"></span></td>
+                               </tr>
+                               <tr>
+                                 <td>संगीतकार</td>
+                                 <td><div ondrop="drop(event)" ondragover="allowDrop(event)" class="du" data-draggable-id="drag5" data-id="qdiv5"></div></td>
+                                 <td><span style="visibility: hidden;" id="visi9">&nbsp;<img src="" style="height: 20px;width: 25px;" id="ans9"></span></td>
+                                 <td style="visibility: hidden;">hidden</td>
+                                 <td>इंसान</td>
+                                 <td><div ondrop="drop(event)" ondragover="allowDrop(event)" class="du" data-draggable-id="drag2" data-id="qdiv6"></div></td>
+                                 <td><span style="visibility: hidden;" id="visi10">&nbsp;<img src="" style="height: 20px;width: 25px;" id="ans10"></span></td>
+                               </tr>
+                               <tr>
+                                 <td>रत्न</td>
+                                 <td><div ondrop="drop(event)" ondragover="allowDrop(event)" class="du" data-draggable-id="drag1" data-id="qdiv7"></div></td>
+                                 <td><span style="visibility: hidden;" id="visi11">&nbsp;<img src="" style="height: 20px;width: 25px;" id="ans11"></span></td>
+                                 <td style="visibility: hidden;">hidden</td>
+                                 <td>कर्म</td>
+                                 <td><div ondrop="drop(event)" ondragover="allowDrop(event)" class="du" data-draggable-id="drag7" data-id="qdiv8"></div></td>
+                                 <td><span style="visibility: hidden;" id="visi12">&nbsp;<img src="" style="height: 20px;width: 25px;" id="ans12"></span></td>
+                              </tr>
+                         </table>
+                   </div>
+                   <span style="margin-left: 405px;"> 
+                        <img src="image\QBACK.png" id='qback' style="height: 25px;width: 25px;">&nbsp;
+                        <img src="image\RESET.png" style="height: 35px;width: 75px;">&nbsp;
+                        <img src="image\QNEXT.png" id='qnext' style="height: 25px;width: 25px;">
+                   </span>
+               </div>
+               <div id="slide_show">
+                   <div id="slide_div1">
+                        <div id="back1">
+                            <img src="image/1-story.jpg" id="im3">
+                        </div>
+                        <img src="image\QBACK.png" id="sback">
+                    </div>
+                    <div id="slide_div2">
+                        <div id="back2">
+                            <img src="image/1-story.jpg" id="im4">
+                        </div>
+                    </div>
+                    <div id="slide_div3">
+                        <div id="back3" >
+                             <img src="image/2-story.jpg" id="im5" >
+                        </div>
+                        <img src="image\QNEXT.png" id="snext">
+                    </div>
+                    <div id="slide_div4">
+                        <center><span ></span>&nbsp;&nbsp;
+                                <span ><img src="image/Replay.png" style="height: 22px;"></span></center>
+                    </div>
+                </div>
+                     <div id="vartini">
+                         <div id="var_div1">
+                             <center>
+                                 <img src="image\QBACK.png" id="vback">
+                             </center> 
+                         </div>
+                         <div id="var_div2">
+                           <img src="image\vertini-1.jpg;" style="height: 559px; width: 460px;" id="im6">
+                         </div>
+                         <div id="var_div3">
+                             <center>
+                                 <img src="image\QNEXT.png" id="vnext">
+                             </center> 
+                         </div>
+                     </div>
+                 </div> 
+             </div>  
                  </div>
                   <div id="anima">
                       <div style="position: fixed;width: 70em;margin-top: 5px;">
@@ -373,7 +388,7 @@ and open the template in the editor.
                           </div>
                       </li>
                       <li><button class="p" data-video-url='Lifeskill and Values.mp4' style="font-size: 12px;width: 135px;">LIFE SKILL AND VALUES</button></li>
-                      <li><button class="p" style="font-size: 13px;font-family: Nirmala UI;font-weight: bold;">वर्तनी ज्ञान</button></li>
+                      <li><button class="p" name="vartini" onclick="vartini();" style="font-size: 13px;font-family: Nirmala UI;font-weight: bold;">वर्तनी ज्ञान</button></li>
                     </ul>
                     </div>
            <br><br>
@@ -406,7 +421,7 @@ and open the template in the editor.
                   </div>
         </div>
     <script>
-        // play video in parfticular div
+        // show parfticular div
          var video=document.getElementById("player");
          $(document).ready(function(){
                  $(".p").click(function(){
@@ -416,6 +431,7 @@ and open the template in the editor.
                  $("#page1").hide();
                  $("#quiz").hide();
                  $("#slide_show").hide();
+                 $("#vartini").hide();
             });
                  $(".ch").click(function(){
                  $("#myDIV").hide();
@@ -432,6 +448,7 @@ and open the template in the editor.
                 $("#page1").hide();  
                 $("#player").hide();
                 $("#slide_show").hide();
+                $("#vartini").hide();
             });
                 $("#qnext").click(function(){
                 $("#fill").hide();
@@ -445,6 +462,7 @@ and open the template in the editor.
                 $("#myDIV").show();
                 $("#slide_show").show();
                 $("#quiz").hide();
+                $("#vartini").hide();
                 $("#page").hide();
                 $("#page1").hide();  
                 $("#player").hide();
@@ -453,162 +471,22 @@ and open the template in the editor.
                 $("#back2").show();
                 $("#back3").show();
             });
+                $('[name="vartini"]').click(function(){
+                $("#myDIV").show();
+                $("#vartini").show();
+                $("#slide_show").hide();
+                $("#quiz").hide();
+                $("#page").hide();
+                $("#page1").hide();  
+                $("#player").hide();
+            });
         });
         
-        //next and prev function
-        var next = document.getElementById("next");
-        var prev = document.getElementById("prev");
-        var im1=document.getElementById("im1");
-        var im2=document.getElementById("im2");
        
-        function Birbal(){
-             count = 0;
-                im1.setAttribute('src','image/Pg-14.jpg');
-                im2.setAttribute('src','image/Pg-15.jpg');
-                prev.style.visibility="hidden";
-            next.onclick = function() {
-            count += 1;
-            prev.style.visibility="visible";
-             if(count==1){
-                im1.setAttribute('src','image/Pg-16.jpg');
-                im2.setAttribute('src','image/Pg-17.jpg');
-            }
-            else if(count==2){
-                im1.setAttribute('src','image/Pg-18.jpg');
-                im2.setAttribute('src','image/Pg-19.jpg');
-                next.style.visibility="hidden";
-            }
-            }
-            prev.onclick=function(){
-                count=count-1;
-                next.style.visibility="visible";
-                if(count==1){
-                im1.setAttribute('src','image/Pg-16.jpg');
-                im2.setAttribute('src','image/Pg-17.jpg');
-            }
-            else if(count==0)
-            {
-                im1.setAttribute('src','image/Pg-14.jpg');
-                im2.setAttribute('src','image/Pg-15.jpg');
-                prev.style.visibility="hidden";
-            }
-            }
-        }
-        //to activate chapters button onclick only
-        var header = document.getElementById("btn");
-        var btns = header.getElementsByClassName("ch");
-        for (var i = 0; i < btns.length; i++) {
-             btns[i].addEventListener("click", function() {
-            var current = document.getElementsByClassName("active");
-                if (current.length > 0) { 
-                      current[0].className = current[0].className.replace(" active", "");
-                 }
-                 this.className += " active";
-             });
-            }
-        //to activate video button onclick only
-        var header1 = document.getElementById("anima");
-        var btn = header1.getElementsByClassName("p");
-        for (var i = 0; i < btn.length; i++) {
-             btn[i].addEventListener("click", function() {
-            var current = document.getElementsByClassName("focus");
-                if (current.length > 0) { 
-                      current[0].className = current[0].className.replace(" focus", "");
-                 }
-                 this.className += " focus";
-             });
-            }
-    //slide show next and previous functionality
-            var snext=document.getElementById("snext");
-            var sback=document.getElementById("sback");
-            var im3=document.getElementById("im3");
-            var im4=document.getElementById("im4");
-            var im5=document.getElementById("im5");
-            var back1=document.getElementById("back1");
-            var back3=document.getElementById("back3");
-            function slide()
-            {
-                count=0;
-                snext.onclick=function(){
-                    count += 1;                
-                    if(count==2)
-                    {
-                        im4.setAttribute('src','image/2-story.jpg');
-                        im5.setAttribute('src','image/3-story.jpg');
-                        sback.style.visibility="visible";
-                        back1.style.visibility="visible";
-                    }
-                    else if(count==3){
-                        im4.setAttribute('src','image/3-story.jpg');
-                        im5.setAttribute('src','image/4-story.jpg');
-                        im3.setAttribute('src','image/2-story.jpg');
-                    }
-                    else if(count==4){
-                        im4.setAttribute('src','image/4-story.jpg');
-                        im5.setAttribute('src','image/5-story.jpg');
-                        im3.setAttribute('src','image/3-story.jpg');
-                    }
-                    else if(count==5){
-                        im4.setAttribute('src','image/5-story.jpg');
-                        im5.setAttribute('src','image/6-story.jpg');
-                        im3.setAttribute('src','image/4-story.jpg');
-                    }
-                    else if(count==6){
-                        im4.setAttribute('src','image/6-story.jpg');
-                        im3.setAttribute('src','image/5-story.jpg');
-                        snext.style.visibility="hidden";
-                        back3.style.visibility="hidden";
-                    }
-                }
-                sback.onclick=function(){
-                    count=count-1;
-                    if(count==5){
-                        im3.setAttribute('src','image/4-story.jpg');
-                        im4.setAttribute('src','image/5-story.jpg');
-                        im5.setAttribute('src','image/6-story.jpg');
-                        snext.style.visibility="visible";
-                        back3.style.visibility="visible";
-                    }
-                    else if(count==4){
-                        im3.setAttribute('src','image/3-story.jpg');
-                        im4.setAttribute('src','image/4-story.jpg');
-                        im5.setAttribute('src','image/5-story.jpg');
-                    }
-                    else if(count==3){
-                        im3.setAttribute('src','image/2-story.jpg');
-                        im4.setAttribute('src','image/3-story.jpg');
-                        im5.setAttribute('src','image/4-story.jpg');
-                    }
-                    else if(count==2){
-                        im3.setAttribute('src','image/1-story.jpg');
-                        im4.setAttribute('src','image/2-story.jpg');
-                        im5.setAttribute('src','image/3-story.jpg');
-                    }
-                    else if(count==1){
-                        im4.setAttribute('src','image/1-story.jpg');
-                        im5.setAttribute('src','image/2-story.jpg');
-                        sback.style.visibility="hidden";
-                        back1.style.visibility="hidden";
-                    }
-                }
-            }
-   //play different video on different button in a single div
-    function swapVideo() {
-    player.src = this.getAttribute("data-video-url");
-    player.load();
-    player.play();
-    }
-
-    var videoPlayButtons = document.querySelectorAll("button"),
-        player = document.getElementById("player");
-
-    for (var i=0; i<videoPlayButtons.length; i++){
-        videoPlayButtons[i].addEventListener('click', swapVideo);
-    }
- 
         
 
-
     </script>
+    <script src="js/next_prev.js"></script>
+    <script src="js/button-activation.js"></script>
 </body>
 </html>
