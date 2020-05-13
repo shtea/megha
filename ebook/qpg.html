@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Question Paper Generator</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/w3.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<style>
+    body{
+        background-image: url("image/qpg_bse.jpeg");
+        background-size: 100% 100%;
+        margin: 0px;
+    }
+   
+    .head-1 {
+  background-color: none;
+  color: black;
+  font-size: 28px; 
+  font-weight: bold;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition: 0.2s;
+  background-size: cover;
+  transition: all 1s ease;  
+}
+.head-2{
+    background-color: whitesmoke;
+    color: black;
+  font-size: 28px; 
+  font-weight: bold;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition: 0.2s;
+  background-size: cover;
+  transition: all 1s ease;  
+}
+ 
+    ul li{
+       list-style: none; 
+       margin-left: 50px;
+       font-size: 21px;
+       padding-top: 15px;
+    }
+    
+    .btntn{
+        background-image: url("image/Animation_Button.png");
+        border: none;
+        background-size: 100% 100%;
+        border-radius: 2px;
+        color: #5F3C6E;
+        font-size: 16px;
+        height: 38px;
+        font-weight: bold;
+     }
+     .btntn:hover{
+        background-image: url("image/Animation_Button_Hover.png");
+        border: none;
+        background-size: 100% 100%;
+        border-radius: 2px;
+        color: white;
+        font-size: 16px;
+        height: 38px;
+        font-weight: bold;
+     }
+     
+</style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="head">
+            <div style="width:60%;float: left;"><a href="index.html"><label><img src="image/qpg_logo.png" style="height: 120px; width: 160px;margin-left: 40px;">Class 2 </label></a></div>
+            <button class="btntn" style="width: 200px;margin-top: 35px;">Download as DOC</button>
+        </div>
+      <div class="row" style="margin-top:110px;">
+        <div class="col-md-6 question_list">
+          <ul>
+              <li>
+                  <img src="image/title_leaf.png" style="height: 100px;"></li></ul>
+          <ul>
+  <li><input type="checkbox" class="hidden" id="acs_m1" value="दिए गए शब्दों की सहायता से खाली स्थान भरिए- "> <strong>दिए गए शब्दों की सहायता से खाली स्थान भरिए-</strong> </li>
+            <li>
+             <input type="checkbox" class="hidden" name="acs1" value="परीक्षा, फिराया, अलमारी, बुद्धिमान, घबरा">
+                     परीक्षा, फिराया, अलमारी, बुद्धिमान, घबरा<br>
+            </li>
+            <li>
+              <input type="checkbox" onclick="section1();" name="acs1" value="यह ___________ मुझसे कुछ कह रही है।">
+              यह ___________ मुझसे कुछ कह रही है।<br>
+            </li>
+            <li>
+              <input type="checkbox" onclick="section1();" name="acs1" value=" बीरबल की बात सुनकर वह दरबारी ___________ गया।">
+               बीरबल की बात सुनकर वह दरबारी ___________ गया।<br>
+            </li>
+            <li>
+              <input type="checkbox" onclick="section1();" name="acs1" value="वास्तव में, मैं तुम्हारी बुद्धि की ___________ले रहा था।">
+              वास्तव में, मैं तुम्हारी बुद्धि की ___________ले रहा था।<br>
+            </li>
+            <li>
+             <input type="checkbox" onclick="section1();" name="acs1" value="उसने तुरंत अपनी दाढ़ी पर हाथ___________ ।">
+              उसने तुरंत अपनी दाढ़ी पर हाथ___________ ।<br>
+            </li>
+            <li>
+             <input type="checkbox" onclick="section1();" name="acs1" value="तुम वास्तव में  ___________हो।">
+              तुम वास्तव में ___________हो।<br>
+            </li>
+          </ul>
+
+            </br>
+<ul>
+  <li><input type="checkbox" class="hidden" id="acs_m2" value="निम्नलिखित शब्दों  का वाक्य प्रयोग कीजिए-"> <strong>निम्नलिखित शब्दों  का वाक्य प्रयोग कीजिए-</strong> </li>
+            <li>
+             <input type="checkbox" onclick="section2();" name="acs2" value="जवाब -   ______________________">
+              जवाब -  ______________________<br>
+            </li>
+            <li>
+             <input type="checkbox" onclick="section2();" name="acs2" value="बुद्धिमान -  ______________________">
+              बुद्धिमान -  ______________________<br>
+            </li>
+            <li>
+             <input type="checkbox" onclick="section2();" name="acs2" value="परीक्षा -  ______________________">
+              परीक्षा -  ______________________<br>
+            </li>
+            <li>
+             <input type="checkbox" onclick="section2();" name="acs2" value="तिनका -  ______________________">
+              तिनका -  ______________________<br>
+            </li>
+</ul>
+</br>
+          <ul>
+            <li>
+             <input class="hidden" type="checkbox" id="acs_m3" value="निम्नलिखित प्रश्नों के उत्तर लिखिए-"> <strong> निम्नलिखित प्रश्नों के उत्तर लिखिए-</strong> </li>
+            <li>
+             <input type="checkbox" onclick="section3();" name="acs3"  value="अकबर ने बीरबल की किस बात की परीक्षा लेनी चाही ?">
+                   अकबर ने बीरबल की किस बात की परीक्षा लेनी चाही ?<br>
+            </li>
+            <li>
+            <input type="checkbox" onclick="section3();" name="acs3"  value="अकबर ने अपनी अँगूठी उतारकर कहाँ रखवा दी ? ">
+              अकबर ने अपनी अँगूठी उतारकर कहाँ रखवा दी ? <br>
+            </li>
+            <li>
+            <input type="checkbox" onclick="section3();" name="acs3" value="बीरबल अलमारी के पास जाकर क्या करने लगे ?">
+              बीरबल अलमारी के पास जाकर क्या करने लगे ?<br>
+            </li>
+            <li>
+           <input type="checkbox" onclick="section3();" name="acs3" value="बीरबल की कौन सी बात सुनकर दरबारी घबरा गया ?">
+              बीरबल की कौन सी बात सुनकर दरबारी घबरा गया ?<br>
+            </li>
+            <li>
+           <input type="checkbox" onclick="section3();" name="acs3" value="जिस दरबारी के पास अँगूठी थी, उसने बीरबल की बात सुनकर क्या किया ? ">
+              जिस दरबारी के पास अँगूठी थी, उसने बीरबल की बात सुनकर क्या किया ?<br>
+            </li>
+          </ul>
+</br>           
+          <ul>
+            <li>
+                <input class="hidden" type="checkbox" id="acs_m4" value="बहु विकल्पीय प्रश्न- :"> <strong> जो उत्तर सही हो, उसके सामने सही (✓) का निशान लगाइए- :</strong> 
+            </li>
+     <li>
+        <input type="checkbox" onclick="section4();" name="acs4"  value="‘महाराज’ का स्त्रीलिंग है- <p> (अ). महारानी ⬜&nbsp;&nbsp;  (ब). महादेवी ⬜ &nbsp;&nbsp; (स). महरी ⬜&nbsp;&nbsp;  ">
+            ‘महाराज’ का स्त्रीलिंग है <br> <div class="Choose_ans_grid"> <span> (अ). महारानी ⬜ </span> <span> (ब). महादेवी  ⬜</span> <span> (स). महरी ⬜</span> </div> 
+     </li> 
+
+     <li>
+        <input type="checkbox" onclick="section4();" name="acs4"  value="‘बुद्धिमान’ का विलोम होगा- <p> (अ) मूर्ख  ⬜&nbsp;&nbsp;  (ब) चालाक  ⬜&nbsp;&nbsp; (स) नादान  ⬜&nbsp;&nbsp; </p>">
+             ‘बुद्धिमान’ का विलोम होगा-<br> <div class="Choose_ans_grid"> <span> (अ) मूर्ख  ⬜</span> <span> (ब) चालाक  ⬜</span> <span> (स) नादान  ⬜</span> </div> 
+     </li>
+
+     <li>
+        <input type="checkbox" onclick="section4();" name="acs4"  value="‘परीक्षा’ का बहुवचन होता है- <p> (अ) परीक्षाएँ  ⬜&nbsp;&nbsp; (ब) परीक्षाओं   ⬜&nbsp;&nbsp; (स) परिक्षाएँ  ⬜&nbsp;&nbsp; </p>">
+         ‘परीक्षा’ का बहुवचन होता है-<br> <div class="Choose_ans_grid"> <span> (अ) परीक्षाएँ  ⬜</span> <span> (ब) परीक्षाओं  ⬜</span> <span> (स) परिक्षाएँ ⬜</span> </div> 
+     </li>  
+          </ul>
+<br>
+    <ul>
+        <li>
+            <img src="image/title_leaf2.png" style="height: 90px;"> </li></ul>
+ <ul>            
+  <li><input class="hidden" type="checkbox" id="acs_m3" value="निम्नलिखित प्रश्नों के उत्तर लिखिए-"> <strong> निम्नलिखित प्रश्नों के उत्तर लिखिए-</strong> </li>
+            <li>
+             <input type="checkbox" onclick="section3();" name="acs3"  value="बारहसिंगा सरोवर पर क्या कर रहा था ?">
+                   बारहसिंगा सरोवर पर क्या कर रहा था ?<br>
+            </li>
+            <li>
+            <input type="checkbox" onclick="section3();" name="acs3"  value="बारहसिंगा ने सरोवर में क्या देखा ? ">
+              बारहसिंगा ने सरोवर में क्या देखा ? <br>
+            </li>
+            <li>
+            <input type="checkbox" onclick="section3();" name="acs3" value="बारहसिंगा ने झाड़ियों से सींग किस प्रकार छुड़ाए ?">
+              बारहसिंगा ने झाड़ियों से सींग किस प्रकार छुड़ाए ?<br>
+            </li>
+            <li>
+           <input type="checkbox" onclick="section3();" name="acs3" value="बारहसिंगा मन ही मन में क्या बुदबुदाया ?">
+             बारहसिंगा मन ही मन में क्या बुदबुदाया ?<br>
+            </li>
+ </ul>
+</br>
+  <ul>
+  <li><input type="checkbox" class="hidden" id="acs_m1" value="दिए गए शब्दों की सहायता से खाली स्थान भरिए- "> <strong>दिए गए शब्दों की सहायता से खाली स्थान भरिए-</strong> </li>
+
+            <li>
+              <input type="checkbox" onclick="section1();" name="acs1" value="बारहसिंगा ___________ में घूम रहा था। (घर/वन)">
+              बारहसिंगा ___________ में घूम रहा था। (घर/वन)<br>
+            </li>
+            <li>
+              <input type="checkbox" onclick="section1();" name="acs1" value="  तालाब ___________ पानी से लबालब भरा था। (साफ़ /गंदे)">
+                तालाब  ___________ पानी से लबालब भरा था। (साफ़ /गंदे)<br>
+            </li>
+            <li>
+              <input type="checkbox" onclick="section1();" name="acs1" value="एक ___________जंगल में घुस आया था। (भिखारी/शिकारी)">
+              एक ___________जंगल में घुस आया था। (भिखारी/शिकारी)<br>
+            </li>
+            <li>
+             <input type="checkbox" onclick="section1();" name="acs1" value="बारहसिंगा के सींग___________ में उलझ गए थे। (झाड़ियों/तारों)">
+              बारहसिंगा के सींग___________ में उलझ गए थे। (झाड़ियों/तारों)<br>
+            </li>
+            <li>
+             <input type="checkbox" onclick="section1();" name="acs1" value="बारहसिंगा अपने ___________पटकने लगा। (पैर/सिर)">
+              बारहसिंगा अपने___________पटकने लगा। (पैर/सिर)<br>
+            </li>
+  </ul>
+</br>           
+          <ul>
+  <li><input class="hidden" type="checkbox" id="acs_m4" value="बहु विकल्पीय प्रश्न- :"> <strong> जो उत्तर सही हो, उसके सामने सही (✓) का निशान लगाइए- :</strong> </li>
+
+     <li>
+        <input type="checkbox" onclick="section4();" name="acs4"  value="‘यह नाम वाला शब्द है-<p> (अ). पाना ⬜&nbsp;&nbsp;  (ब). पीना ⬜ &nbsp;&nbsp; (स). पानी ⬜&nbsp;&nbsp;  ">
+            यह नाम वाला शब्द है-<br> <div class="Choose_ans_grid"> <span> (अ). पाना ⬜ </span> <span> (ब). पीना  ⬜</span> <span> (स). पानी ⬜</span> </div> 
+     </li> 
+
+     <li>
+        <input type="checkbox" onclick="section4();" name="acs4"  value="यह शुद्ध शब्द है- <p> (अ) सुंदर  ⬜&nbsp;&nbsp;  (ब)  सूंदर  ⬜&nbsp;&nbsp; (स) सुदंर  ⬜&nbsp;&nbsp; </p>">
+             यह शुद्ध शब्द है-<br> <div class="Choose_ans_grid"> <span> (अ) सुंदर  ⬜</span> <span> (ब) सूंदर  ⬜</span> <span> (स) सुदंर  ⬜</span>  </div> 
+     </li>
+
+     <li>
+        <input type="checkbox" onclick="section4();" name="acs4"  value="‘पानी’ का समानार्थी है- <p> (अ) जलज ⬜&nbsp;&nbsp; (ब) जल   ⬜&nbsp;&nbsp; (स) जाल  ⬜&nbsp;&nbsp; </p>">
+         ‘पानी’ का समानार्थी है-<br> <div class="Choose_ans_grid"> <span> (अ) जलज  ⬜</span> <span> (ब) जल  ⬜</span> <span> (स) जाल ⬜</span> </div> 
+     </li>  
+          </ul>
+       <ul>
+        <li>
+            <input type="button" onclick='return getQuestions();' value="Generate Paper with Selected Question" class="btn btntn"/>
+        </li></ul>
+        </div>
+      </div>
+   </div>
+    <script>
+    var head = document.getElementById('head');
+window.addEventListener('scroll', function() {
+     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+          head.classList.remove('head-1');
+          head.classList.add('head-2');
+     }
+     else{
+        head.classList.add('head-1');
+          head.classList.remove('head-2');
+     }
+});
+    
+    $(document).ready(function ($) {
+            $("#btndoc").click(function (event) {
+                $("#Selected_Question").wordExport();
+            });
+        });
+        function section1() {
+            var $boxes = $('input[name=acs1]:checked');
+            if ($boxes.length > 0) {
+                $('#acs_m1').prop('checked', true)
+            }
+            else {
+                $('#acs_m1').prop('checked', false)
+            }
+        }
+        function section2() {
+            var $boxes = $('input[name=acs2]:checked');
+            if ($boxes.length > 0) {
+                $('#acs_m2').prop('checked', true)
+            }
+            else {
+                $('#acs_m2').prop('checked', false)
+            }
+        }
+        function section3() {
+            var $boxes = $('input[name=acs3]:checked');
+            if ($boxes.length > 0) {
+                $('#acs_m3').prop('checked', true)
+            }
+            else {
+                $('#acs_m3').prop('checked', false)
+            }
+        }
+
+        function section4() {
+            var $boxes = $('input[name=acs4]:checked');
+            if ($boxes.length > 0) {
+                $('#acs_m4').prop('checked', true)
+            }
+            else {
+                $('#acs_m4').prop('checked', false)
+            }
+        }
+        function section5() {
+            var $boxes = $('input[name=acs5]:checked');
+            if ($boxes.length > 0) {
+                $('#acs_m5').prop('checked', true)
+            }
+            else {
+                $('#acs_m5').prop('checked', false)
+            }
+        }
+    </script>
+<script>
+        $(document).ready(
+        function () {
+            $("#breadcrum").html(localStorage.getItem("_breadcrum"));
+        }
+        );
+    </script>
+</body>
+</html>
