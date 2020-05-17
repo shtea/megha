@@ -58,8 +58,8 @@ body{
             }
             
             .on-scrollbar {
-               height: 69vh;
-                width: 223px;
+               height: 100%;
+                width: 30%;
                 overflow: auto;
             }
         /*hide scrollbar on hover*/    
