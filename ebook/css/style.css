@@ -7,7 +7,7 @@ body{
             }
             
             #main{
-                min-height: 95.6vh;
+                min-height: 100%;
                 width: 100%;
                 min-width: 1230px;
                 padding: 0px;
@@ -30,7 +30,7 @@ body{
                 background-image: url("../image/Ch_Button.png");
                 border: none;
                 height: 30px; 
-                width: 210px;
+                width: 93%;
                 background-size: 103% 113%;
                 border-radius: 4px;
                 box-shadow:2px 2px grey;  
@@ -46,7 +46,7 @@ body{
                 background-image: url("../image/Button_Hover.png");
                 border: none;
                 height: 30px; 
-                width: 210px;
+                width: 93%;
                 background-size: 102% 103%;
                 border-radius: 4px;
                 box-shadow:2px 2px grey; 
@@ -59,8 +59,8 @@ body{
             }
             
             .on-scrollbar {
-               height: 69vh;
-                width: 223px;
+               height: 100%;
+                width: 100%;
                 overflow: auto;
             }
         /*hide scrollbar on hover*/    
