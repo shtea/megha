@@ -223,10 +223,10 @@ and open the template in the editor.
             <div id="z" class="w3-col s10">
               <div class="w3-row">
                  <div class="w3-col-s6" style="float: left;margin-left: 9px;margin-top: 9px;" id="page">
-                     <img src="image\page.png" style="height: 559px; width: 491px;" id="im1">
+                     <img src="image\page.png" style="height: 559px; width: 482px;" id="im1">
                  </div>
                  <div class="w3-col-s6" id="page1" style="margin-top: 9px;float: right;margin-right: 12px;">
-                     <img src="image\Frontcover.jpg" style="height: 559px; width:490px;" id="im2">
+                     <img src="image\Frontcover.jpg" style="height: 559px; width:482px;" id="im2">
                  </div>
                  <div class="w3-col s10" id="myDIV">
                      <video id="player" controls></video> 
@@ -350,6 +350,55 @@ and open the template in the editor.
                              </center> 
                          </div>
                      </div>
+                     <div id="concept">
+                         <div id="con_div1">
+                             <div id="con_back1"><img src="" id="im7"></div><br>
+                             <div id="lower_div">जो एक का ज्ञान कराते हैं, उन्हें एकवचन कहते हैं।</div>
+                         </div>
+                         <div id="con_div2">
+                             <div id="con_back2">
+                                 <label style="font-size: 30px;margin-left: 48%;"><strong>वचन</strong></label><br>
+                                 <img src="image/LINE.png" style="margin-left: 26%"><br>
+                                 <label style="font-size: 30px;margin-left: 16%;">एकवचन</label>
+                                 <label style="font-size: 30px;margin-left: 30%;">बहुवचन</label><br>
+                                 <label style="font-size: 25px;margin-left: 22%;display: inline-block;margin-top: 20px;" onmouseover="horse();" onmouseout="horse1();">घोड़ा</label>
+                                 <label style="font-size: 25px;margin-left: 44%;" onmouseover="horses();" onmouseout="horses1();">घोड़े</label><br>
+                                 <label style="font-size: 25px;margin-left: 21%;display: inline-block;margin-top: 20px;" onmouseover="pencil();" onmouseout="pencil1();">पेंसिल</label>
+                                 <label style="font-size: 25px;margin-left: 40%;" onmouseover="pencils();" onmouseout="pencils1();">पेंसिलें</label><br>
+                                 <label style="font-size: 25px;margin-left: 24%;display: inline-block;margin-top: 20px;" onmouseover="lake();" onmouseout="lake1();">नदी</label>
+                                 <label style="font-size: 25px;margin-left: 42%;" onmouseover="lakes();" onmouseout="lakes1();">नदियाँ</label><br>
+                                 <label style="font-size: 25px;margin-left: 20%;display: inline-block;margin-top: 20px;" onmouseover="bird();" onmouseout="bird1();">चिड़िया</label>
+                                 <label style="font-size: 25px;margin-left: 38%;" onmouseover="birds();" onmouseout="birds1();">चिड़ियाँ</label>
+                             </div>
+                         </div>
+                         <div id="con_div3">
+                             <div id="con_back3"><img src="" id="im8"></div><br>
+                             <div id="lower_div1">जो शब्द एक से अधिक का ज्ञान </div>
+                         </div>
+                     </div>
+                     <div id="life">
+                         <div id="life_div1">
+                             <div id="text1">
+                                 <span>आज ईद का त्योहार है। आज राम, जौन, मोहन, सुखबीर सभी इसान के घर ईद मिलने जाएँगे। इसान के घर उन्हें छोला भटूरा, बिरयानी, कबाब, खीर, सिंवइयाँ आदि व्यंजन परोसे गए।</span>
+                             </div>
+                             <div id="text2">
+                                 <span>ईद पर पकाया जाने वाला मुख्य व्यंजन क्या है?</span>
+                             </div>
+                             <img src="image/2BOY.png" style="margin-left: 20%;height: 35%;width:75%;"><br>
+                             <label style="margin-left: 28%;"><strong>Ans: </strong></label><label>सिंवइयाँ</label>
+                         </div>
+                         <div id="life_div2">
+                             <div style="margin-left: 19%;margin-top: 40%;">
+                                 <img src="image/SEWAYI.png" style="margin-left: 18%" id="im9" onmouseover="food1();" onmouseout="foods1();"><br>
+                             <img src="image/BIRYAANI.png" style="margin-top: 1%;" id="im10" onmouseover="food2();" onmouseout="foods2();">
+                             <img src="image/KABAB.png" style="margin-top: 1%;" id="im11" onmouseover="food3();" onmouseout="foods3();"><br>
+                             <img src="image/KHEER.png" style="margin-top: 1%;" id="im12" onmouseover="food4();" onmouseout="foods4();">
+                             <img src="image/CHOLE.png" style="margin-top: 1%;" id="im13" onmouseover="food5();" onmouseout="foods5();">
+                             
+                             </div>
+                         </div>
+                         <img src="image/LAST.png" style="margin-left: 18%;">
+                     </div>
                  </div> 
              </div>  
                  </div>
@@ -361,7 +410,7 @@ and open the template in the editor.
                       </div>
                     <ul >
                       <li><button class="p" data-video-url='Birbal ki soojh boojh.mp4'>ANIMATION</button></li>
-                      <li class="dropup"><button class="p" style="font-family: Nirmala UI;font-size: 15px;width: 70px;font-weight: bold;">अभ्यास</button>
+                      <li class="dropup"><button class="p" name="quiz" style="font-family: Nirmala UI;font-size: 15px;width: 70px;font-weight: bold;">अभ्यास</button>
                           <div class="dropup-content">
                            <a href="#" style="background-color: cyan;">उच्चारण - सुनो,पढ़ो और लिखो </a>
                            <a href="#" style="background-color: greenyellow;">शब्द ज्ञान</a>
@@ -379,7 +428,7 @@ and open the template in the editor.
                           </div>
                       </li>
                       <li><button class="p" data-video-url='Yogyta Vistar.mp4' style="font-size: 13px; font-family: Nirmala UI;font-weight: bold;">योग्यता विस्तार</button></li>
-                      <li><button class="p" data-video-url='Concept Map.mp4' style="width: 115px;">CONCEPT MAP</button></li>
+                      <li><button class="p" name="concept"  style="width: 115px;">CONCEPT MAP</button></li>
                       <li class="dropup"><button class="p" data-video-url='Rachnaa kaar.mp4' style="font-size: 13px;font-family: Nirmala UI;font-weight: bold;">रचना का संसार</button>
                           <div class="dropup-content">
                            <a href="#" style="background-color: greenyellow;">गतिविधियां</a>
@@ -387,7 +436,7 @@ and open the template in the editor.
                            <a href="#" style="background-color: plum;">Outdoor Activities</a>
                           </div>
                       </li>
-                      <li><button class="p" data-video-url='Lifeskill and Values.mp4' style="font-size: 12px;width: 135px;">LIFE SKILL AND VALUES</button></li>
+                      <li><button class="p" name="life" style="font-size: 12px;width: 135px;">LIFE SKILL AND VALUES</button></li>
                       <li><button class="p" name="vartini" onclick="vartini();" style="font-size: 13px;font-family: Nirmala UI;font-weight: bold;">वर्तनी ज्ञान</button></li>
                     </ul>
                     </div>
@@ -432,6 +481,8 @@ and open the template in the editor.
                  $("#quiz").hide();
                  $("#slide_show").hide();
                  $("#vartini").hide();
+                 $("#concept").hide();
+                 $("#life").hide();
             });
                  $(".ch").click(function(){
                  $("#myDIV").hide();
@@ -449,6 +500,8 @@ and open the template in the editor.
                 $("#player").hide();
                 $("#slide_show").hide();
                 $("#vartini").hide();
+                $("#concept").hide();
+                $("#life").hide();
             });
                 $("#qnext").click(function(){
                 $("#fill").hide();
@@ -466,6 +519,8 @@ and open the template in the editor.
                 $("#page").hide();
                 $("#page1").hide();  
                 $("#player").hide();
+                $("#concept").hide();
+                $("#life").hide();
             });
                 $("#snext").click(function(){
                 $("#back2").show();
@@ -479,10 +534,131 @@ and open the template in the editor.
                 $("#page").hide();
                 $("#page1").hide();  
                 $("#player").hide();
+                $("#concept").hide();
+                $("#life").hide();
+            });
+                $('[name="concept"]').click(function(){
+                $("#myDIV").show();
+                $("#concept").show();
+                $("#vartini").hide();
+                $("#slide_show").hide();
+                $("#quiz").hide();
+                $("#page").hide();
+                $("#page1").hide();  
+                $("#player").hide();
+                $("#life").hide();
+            });
+                $('[name="life"]').click(function(){
+                $("#myDIV").show();
+                $("#life").show();
+                $("#concept").hide();
+                $("#vartini").hide();
+                $("#slide_show").hide();
+                $("#quiz").hide();
+                $("#page").hide();
+                $("#page1").hide();  
+                $("#player").hide();
             });
         });
         
-       
+        //hover on text funtionality
+        var im7= document.getElementById("im7");
+        var con_back1=document.getElementById("con_back1");
+        var im8= document.getElementById("im8");
+        var con_back3=document.getElementById("con_back3");
+            function horse(){
+                im7.setAttribute('src','image/HORSE.jpg');
+                con_back1.style.visibility="visible";
+            }
+            function horse1(){
+                con_back1.style.visibility="hidden";
+            }
+            function horses(){
+                im8.setAttribute('src','image/HORSES.jpg');
+                con_back3.style.visibility="visible";
+            }
+            function horses1(){
+                con_back3.style.visibility="hidden";
+            }
+            function pencil(){
+                im7.setAttribute('src','image/pencil.jpg');
+                con_back1.style.visibility="visible";
+            }
+            function pencil1(){
+                con_back1.style.visibility="hidden";
+            }
+            function pencils(){
+                im8.setAttribute('src','image/pencils.jpg');
+                con_back3.style.visibility="visible";
+            }
+            function pencils1(){
+                con_back3.style.visibility="hidden";
+            }
+             function lake(){
+                im7.setAttribute('src','image/RIVER.jpg');
+                con_back1.style.visibility="visible";
+            }
+            function lake1(){
+                con_back1.style.visibility="hidden";
+            }
+             function lakes(){
+                im8.setAttribute('src','image/RIVERS.jpg');
+                con_back3.style.visibility="visible";
+            }
+            function lakes1(){
+                con_back3.style.visibility="hidden";
+            }
+             function bird(){
+                im7.setAttribute('src','image/BIRD.jpg');
+                con_back1.style.visibility="visible";
+            }
+            function bird1(){
+                con_back1.style.visibility="hidden";
+            }
+            function birds(){
+                im8.setAttribute('src','image/BIRDS.jpg');
+                con_back3.style.visibility="visible";
+            }
+            function birds1(){
+                con_back3.style.visibility="hidden";
+            }
+            
+         //hover on image and change src value
+         var im9=document.getElementById("im9");
+         var im10=document.getElementById("im10");
+         var im11=document.getElementById("im11");
+         var im12=document.getElementById("im12");
+         var im13=document.getElementById("im13");
+         function food1(){
+             im9.setAttribute('src','image/SEWAYI TEXT.png');
+         }
+         function foods1(){
+             im9.setAttribute('src','image/SEWAYI.png');
+         }
+         function food2(){
+             im10.setAttribute('src','image/BIRYAANI TEXT.png');
+         }
+         function foods2(){
+             im10.setAttribute('src','image/BIRYAANI.png');
+         }
+         function food3(){
+             im11.setAttribute('src','image/KABAB TEXT.png');
+         }
+         function foods3(){
+             im11.setAttribute('src','image/KABAB.png');
+         }
+         function food4(){
+             im12.setAttribute('src','image/KHEER TEXT.png');
+         }
+         function foods4(){
+             im12.setAttribute('src','image/KHEER.png');
+         }
+         function food5(){
+             im13.setAttribute('src','image/CHOLE TEXT.png');
+         }
+         function foods5(){
+             im13.setAttribute('src','image/CHOLE.png');
+         }
         
 
     </script>
